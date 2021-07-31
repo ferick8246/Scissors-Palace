@@ -2,7 +2,6 @@
 const mongoose = require('mongoose')
 
 
-
 // connects to mongodb
 mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/scissors-palace', {
     useNewUrlParser: true,
