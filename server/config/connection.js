@@ -12,4 +12,4 @@ mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/scissors-palace
 
 
 // exports
-module.exports = mongoose.connect
+module.exports = mongoose.connection

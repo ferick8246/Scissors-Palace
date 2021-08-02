@@ -3,7 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "graphql": "^15.5.1"
+    "graphql": "^15.5.1",
+    "stripe": "^8.167.0"
   },
   "scripts": {
     "start": "node server/server.js",

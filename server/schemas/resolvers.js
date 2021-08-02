@@ -38,11 +38,11 @@ const resolvers = {
         user: async (parent, args, context) => {
             if (context.user) {
                 const user = await UserInputError.findById(context.user._id).populate({
-                    path: 'orders.products',
+                    path: 'carts.products',
                     populate: 'category'
                 })
 
-                user.orders.sort((a, b) => b.purchaseDate - a.purchaseDate)
+                user.carts.sort((a, b) => b.purchaseDate - a.purchaseDate)
 
                 return user
             }
@@ -51,14 +51,14 @@ const resolvers = {
         },
 
 
-        order: async (parent, {_id }, context) => {
+        cart: async (parent, {_id }, context) => {
             if(context.user) {
                 const user = await User.findById(context.user._id).populate({
-                    path: 'orders.products',
+                    path: 'carts.products',
                     populate: 'category'
                 })
 
-                return user.orders.id(_id)
+                return user.carts.id(_id)
             }
 
             throw new AuthenticationError(`Hey, you're not logged in!`)
@@ -67,9 +67,9 @@ const resolvers = {
 
         checkout: async (parent, args, context) => {
             const url = new URL(context.headers.referer).origin
-            const order = new Order({ products: args.products })
+            const cart = new Cart({ products: args.products })
             const line_items = []
-            const { products } = await order.populate('products').execPopulate()
+            const { products } = await cart.populate('products').execPopulate()
 
             for (let i = 0; i < products.length; i++) {
                 const product = await stripe.products.create({
@@ -114,14 +114,14 @@ const resolvers = {
         },
 
 
-        addOrder: async (parent, { products }, context) => {
+        addToCart: async (parent, { products }, context) => {
             console.log(context)
             if (context.user) {
-                const order = new Order({ products })
+                const cart = new Cart({ products })
 
-                await User.findByIdAndUpdate(context.user._id, { $push: { orders: order } })
+                await User.findByIdAndUpdate(context.user._id, { $push: { carts: cart } })
 
-                return order
+                return cart
             }
             
             throw new AuthenticationError(`Hey, you're not logged in!`)
