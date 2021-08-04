@@ -4,126 +4,126 @@ const { User, Product, Category } = require('../models');
 db.once('open', async () => {
   await Category.deleteMany();
 
-  //const categories = await Category.insertMany([
-   // { name: '' },
-    //{ name: '' },
-    //{ name: '' },
-    //{ name: '' },
-    //{ name: '' }
-  //]);
+  const categories = await Category.insertMany([
+   { name: 'cuts' },
+    // { name: '' },
+    // { name: '' },
+    // { name: '' },
+    // { name: '' }
+  ]);
 
-  console.log('categories seeded');
+  console.log('seeded');
 
   await Product.deleteMany();
 
   const products = await Product.insertMany([
     {
-      name: '',
+      name: 'Taperfade',
       description:
-        '',
-      image: '',
+        'A fade that tapers',
+      image: 'haircut-1.jpg',
       category: categories[0]._id,
       price: 2.99,
       quantity: 500
     },
-    {
-      name: '',
-      description:
-        '',
-      image: '',
-      category: categories[0]._id,
-      price: 1.99,
-      quantity: 500
-    },
-    {
-      name: '',
-      category: categories[1]._id,
-      description:
-        '',
-      image: '',
-      price: 7.99,
-      quantity: 20
-    },
-    {
-      name: '',
-      category: categories[1]._id,
-      description:
-        '',
-      image: '',
-      price: 3.99,
-      quantity: 50
-    },
-    {
-      name: '',
-      category: categories[1]._id,
-      description:
-        '',
-      image: '',
-      price: 14.99,
-      quantity: 100
-    },
-    {
-      name: '',
-      category: categories[2]._id,
-      description:
-        '',
-      image: '',
-      price: 399.99,
-      quantity: 30
-    },
-    {
-      name: '',
-      category: categories[2]._id,
-      description:
-        '',
-      image: '',
-      price: 199.99,
-      quantity: 30
-    },
-    {
-      name: '',
-      category: categories[3]._id,
-      description:
-        '',
-      image: '',
-      price: 9.99,
-      quantity: 100
-    },
-    {
-      name: '',
-      category: categories[4]._id,
-      description: '',
-      image: '',
-      price: 1.99,
-      quantity: 1000
-    },
-    {
-      name: '',
-      category: categories[4]._id,
-      description:
-        '',
-      image: '',
-      price: 2.99,
-      quantity: 1000
-    },
-    {
-      name: '',
-      category: categories[4]._id,
-      description:
-        '',
-      image: '',
-      price: 7.99,
-      quantity: 100
-    },
-    {
-      name: '',
-      category: categories[4]._id,
-      description:
-        '',
-      image: '',
-      price: 9.99,
-      quantity: 600
-    }
+    // {
+    //   name: '',
+    //   description:
+    //     '',
+    //   image: '',
+    //   category: categories[0]._id,
+    //   price: 1.99,
+    //   quantity: 500
+    // },
+    // {
+    //   name: '',
+    //   category: categories[1]._id,
+    //   description:
+    //     '',
+    //   image: '',
+    //   price: 7.99,
+    //   quantity: 20
+    // },
+    // {
+    //   name: '',
+    //   category: categories[1]._id,
+    //   description:
+    //     '',
+    //   image: '',
+    //   price: 3.99,
+    //   quantity: 50
+    // },
+    // {
+    //   name: '',
+    //   category: categories[1]._id,
+    //   description:
+    //     '',
+    //   image: '',
+    //   price: 14.99,
+    //   quantity: 100
+    // },
+    // {
+    //   name: '',
+    //   category: categories[2]._id,
+    //   description:
+    //     '',
+    //   image: '',
+    //   price: 399.99,
+    //   quantity: 30
+    // },
+    // {
+    //   name: '',
+    //   category: categories[2]._id,
+    //   description:
+    //     '',
+    //   image: '',
+    //   price: 199.99,
+    //   quantity: 30
+    // },
+    // {
+    //   name: '',
+    //   category: categories[3]._id,
+    //   description:
+    //     '',
+    //   image: '',
+    //   price: 9.99,
+    //   quantity: 100
+    // },
+    // {
+    //   name: '',
+    //   category: categories[4]._id,
+    //   description: '',
+    //   image: '',
+    //   price: 1.99,
+    //   quantity: 1000
+    // },
+    // {
+    //   name: '',
+    //   category: categories[4]._id,
+    //   description:
+    //     '',
+    //   image: '',
+    //   price: 2.99,
+    //   quantity: 1000
+    // },
+    // {
+    //   name: '',
+    //   category: categories[4]._id,
+    //   description:
+    //     '',
+    //   image: '',
+    //   price: 7.99,
+    //   quantity: 100
+    // },
+    // {
+    //   name: '',
+    //   category: categories[4]._id,
+    //   description:
+    //     '',
+    //   image: '',
+    //   price: 9.99,
+    //   quantity: 600
+    // }
   ]);
 
   console.log('products seeded');
@@ -131,21 +131,21 @@ db.once('open', async () => {
   await User.deleteMany();
 
   await User.create({
-    firstName: '',
-    lastName: '',
-    email: '',
+    firstName: 'bob',
+    lastName: 'villa',
+    email: 'treesarecool@gmail.com',
     password: 'password12345',
     orders: [
       {
-        products: [products[0]._id, products[0]._id, products[1]._id]
+        products: [products[0]._id]
       }
     ]
   });
 
   await User.create({
-    firstName: '',
-    lastName: '',
-    email: '',
+    firstName: 'bob',
+    lastName: 'villa',
+    email: 'test@test.com',
     password: 'password12345'
   });
 
