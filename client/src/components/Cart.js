@@ -5,7 +5,9 @@ const stripePromise = loadStripe('stripe key here');
 
 function Cart() {
     return (
-      null
+       <div>
+            <h1>Cart</h1>
+        </div>
     );
   }
   
