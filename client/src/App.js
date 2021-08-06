@@ -9,8 +9,8 @@ import AboutUs from './components/AboutUs'
 function App() {
   return (
     <div>
-      <Header />
       <NavBar />
+      <Header />
       <AboutUs />
       <Cart />
     </div>
