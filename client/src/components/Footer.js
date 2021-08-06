@@ -14,7 +14,7 @@ const Footer = () => {
           >
             ❤️
           </span>{' '}
-          by the Tech Thoughts team.
+          by Team Mongoose.
         </h4>
       </div>
     </footer>
