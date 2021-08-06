@@ -6,7 +6,8 @@ import './index.css';
 import Header from './components/Header';
 import Cart from './components/Cart'
 import NavBar from './components/NavBar';
-import AboutUs from './components/AboutUs'
+import AboutUs from './components/AboutUs';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -15,11 +16,10 @@ function App() {
         <NavBar />
         <Header />
         <Cart />
-        <div className="container">
           <Route exact path="/about">
             <AboutUs />
           </Route>
-        </div>
+        <Footer />
       </Router>
     // </ApolloProvider>
   );
