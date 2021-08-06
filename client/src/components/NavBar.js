@@ -14,9 +14,9 @@ class NavBar extends Component {
         <nav className="justify-between">
           <ul className="items-center justify-between pt-4 text-base lg:flex lg:pt-0">
             <li>
-              <a className="block px-0 py-3 border-b-2 border-transparent lg:p-4 hover:border-yellow-500" href="/">
-                SHOP
-              </a>
+              <span className="block px-0 py-3 border-b-2 border-transparent lg:p-4 hover:border-yellow-500" href="/">
+              <Link to="/shop">SHOP</Link>
+              </span>
             </li>
             <li>
               <span className="block px-0 py-3 border-b-2 border-transparent lg:p-4 hover:border-yellow-500" href="/">
@@ -24,19 +24,19 @@ class NavBar extends Component {
               </span>
             </li>
             <li>
-              <a className="block px-0 py-3 border-b-2 border-transparent lg:p-4 hover:border-yellow-500" href="/">
-                GALLERY
-              </a>
+              <span className="block px-0 py-3 border-b-2 border-transparent lg:p-4 hover:border-yellow-500" href="/">
+              <Link to="/gallery">GALLERY</Link>
+              </span>
             </li>
             <li>
-              <a className="block px-0 py-3 border-b-2 border-transparent lg:p-4 hover:border-yellow-500" href="/">
-                PRESS
-              </a>
+              <span className="block px-0 py-3 border-b-2 border-transparent lg:p-4 hover:border-yellow-500" href="/">
+              <Link to="/press">PRESS</Link>
+              </span>
             </li>
             <li>
-              <a className="block px-0 py-3 border-b-2 border-transparent lg:p-4 hover:border-yellow-500" href="/">
-                CONTACT
-              </a>
+              <span className="block px-0 py-3 border-b-2 border-transparent lg:p-4 hover:border-yellow-500" href="/">
+              <Link to="/contact">CONTACT</Link>
+              </span>
             </li>
           </ul>
         </nav>
