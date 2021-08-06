@@ -7,6 +7,8 @@ import Header from './components/Header';
 import Cart from './components/Cart'
 import NavBar from './components/NavBar';
 import AboutUs from './components/AboutUs';
+import Contact from './components/Contact';
+import Shop from './components/Shop';
 import Footer from './components/Footer';
 
 function App() {
@@ -18,6 +20,12 @@ function App() {
         <Cart />
           <Route exact path="/about">
             <AboutUs />
+          </Route>
+          <Route exact path="/contact">
+            <Contact />
+          </Route>
+          <Route exact path="/shop">
+            <Shop />
           </Route>
         <Footer />
       </Router>
