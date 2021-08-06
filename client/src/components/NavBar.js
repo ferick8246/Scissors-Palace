@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { TailwindNavbar } from 'tailwind-navbar-react';
+import { Link } from 'react-router-dom';
  
 class NavBar extends Component {
   render () {
@@ -18,9 +19,9 @@ class NavBar extends Component {
               </a>
             </li>
             <li>
-              <a className="block px-0 py-3 border-b-2 border-transparent lg:p-4 hover:border-yellow-500" href="/">
-                ABOUT
-              </a>
+              <span className="block px-0 py-3 border-b-2 border-transparent lg:p-4 hover:border-yellow-500" href="/">
+                <Link to="/about">ABOUT</Link>
+              </span>
             </li>
             <li>
               <a className="block px-0 py-3 border-b-2 border-transparent lg:p-4 hover:border-yellow-500" href="/">
