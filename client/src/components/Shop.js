@@ -1,11 +1,13 @@
 import React from "react";
 
-import Product from '.Product';
+import MetaData from "./layout/MetaData";
+// import Product from '.Product';
 
 function Shop() {
     return(
         <div>
-            <Product />
+            <MetaData title={'Shop'}/>
+            {/* <Product /> */}
         </div>
     )
 }
