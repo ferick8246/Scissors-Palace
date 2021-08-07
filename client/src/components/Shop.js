@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";\
+import React, { useEffect } from "react"
 
 import MetaData from "./layout/MetaData";
 // import Product from '.Product';
