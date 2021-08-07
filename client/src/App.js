@@ -11,6 +11,10 @@ import {
 } from '@apollo/client';
 import { setContext } from '@apollo/client/link/context';
 
+const httpLink = createHttpLink({
+  uri: '/graphql',
+});
+
 // component imports:
 import Header from './components/Header';
 import Cart from './components/Cart'
