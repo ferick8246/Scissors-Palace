@@ -7,7 +7,7 @@ class NavBar extends Component {
     return (
       <TailwindNavbar
         brand={
-          <img src="https://media.discordapp.net/attachments/694834406493257762/729067815499202651/matthew_border.png" width="40" height="40" alt="Brand logo" />
+          <img src="./logo512.png" width="40" height="40" alt="Brand logo" />
         }
         className="py-1"
       >

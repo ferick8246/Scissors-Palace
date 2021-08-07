@@ -1,8 +1,11 @@
 import React from 'react';
 
+import MetaData from './layout/MetaData';
+
 function AboutUs() {
     return (
         <div>
+            <MetaData title={'About Us'}/>
         <div className="container flex justify-center mx-auto pt-16">
             <div>
                 <p className="text-gray-500 text-lg text-center font-normal pb-3">SCISSORS PALACE TEAM</p>
