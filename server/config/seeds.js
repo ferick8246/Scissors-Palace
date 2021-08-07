@@ -102,7 +102,7 @@ db.once('open', async () => {
       name: 'Hair Dye',
       description:
         `Exclusive dye all the way from France`,
-      image: 'hair-color.jpg',
+      image: './images/Square/hair-color.jpg',
       category: categories[0]._id,
       price: 500.00,
       quantity: 500
