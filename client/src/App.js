@@ -16,13 +16,13 @@ const httpLink = createHttpLink({
 });
 
 // component imports:
-import Header from './components/Header';
+import Header from './components/layout/Header';
 import Cart from './components/Cart'
 import NavBar from './components/layout/NavBar';
 import AboutUs from './components/AboutUs';
 import Contact from './components/Contact';
 import Shop from './components/Shop';
-import Footer from './components/Footer';
+import Footer from './components/layout/Footer';
 
 // Middleware
 // Construct request middleware that will attach the JWT token to every request as an `authorization` header
