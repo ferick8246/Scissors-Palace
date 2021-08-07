@@ -1,5 +1,5 @@
 import React from "react";
-import { useStoreContext } from '../../utils/GlobalState'
+import { useStoreContext } from '../utils/GlobalState'
 
 function Shop() {
     const [state, dispatch] = useStoreContext()
