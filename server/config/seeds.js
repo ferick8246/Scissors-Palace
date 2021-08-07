@@ -5,11 +5,11 @@ db.once('open', async () => {
   await Category.deleteMany();
 
   const categories = await Category.insertMany([
-   { name: 'cuts' },
-    // { name: '' },
-    // { name: '' },
-    // { name: '' },
-    // { name: '' }
+    { name: 'cuts' },
+    { name: 'shampoos' },
+    { name: 'razer' },
+    { name: 'clippers' },
+    { name: 'dryers' }
   ]);
 
   console.log('seeded');
@@ -26,104 +26,105 @@ db.once('open', async () => {
       price: 2.99,
       quantity: 500
     },
-    // {
-    //   name: '',
-    //   description:
-    //     '',
-    //   image: '',
-    //   category: categories[0]._id,
-    //   price: 1.99,
-    //   quantity: 500
-    // },
-    // {
-    //   name: '',
-    //   category: categories[1]._id,
-    //   description:
-    //     '',
-    //   image: '',
-    //   price: 7.99,
-    //   quantity: 20
-    // },
-    // {
-    //   name: '',
-    //   category: categories[1]._id,
-    //   description:
-    //     '',
-    //   image: '',
-    //   price: 3.99,
-    //   quantity: 50
-    // },
-    // {
-    //   name: '',
-    //   category: categories[1]._id,
-    //   description:
-    //     '',
-    //   image: '',
-    //   price: 14.99,
-    //   quantity: 100
-    // },
-    // {
-    //   name: '',
-    //   category: categories[2]._id,
-    //   description:
-    //     '',
-    //   image: '',
-    //   price: 399.99,
-    //   quantity: 30
-    // },
-    // {
-    //   name: '',
-    //   category: categories[2]._id,
-    //   description:
-    //     '',
-    //   image: '',
-    //   price: 199.99,
-    //   quantity: 30
-    // },
-    // {
-    //   name: '',
-    //   category: categories[3]._id,
-    //   description:
-    //     '',
-    //   image: '',
-    //   price: 9.99,
-    //   quantity: 100
-    // },
-    // {
-    //   name: '',
-    //   category: categories[4]._id,
-    //   description: '',
-    //   image: '',
-    //   price: 1.99,
-    //   quantity: 1000
-    // },
-    // {
-    //   name: '',
-    //   category: categories[4]._id,
-    //   description:
-    //     '',
-    //   image: '',
-    //   price: 2.99,
-    //   quantity: 1000
-    // },
-    // {
-    //   name: '',
-    //   category: categories[4]._id,
-    //   description:
-    //     '',
-    //   image: '',
-    //   price: 7.99,
-    //   quantity: 100
-    // },
-    // {
-    //   name: '',
-    //   category: categories[4]._id,
-    //   description:
-    //     '',
-    //   image: '',
-    //   price: 9.99,
-    //   quantity: 600
-    // }
+    {
+      name: 'The Weeknd',
+      description:
+        `Can't feel my face`,
+      image: 'haircut-7.jpg',
+      category: categories[0]._id,
+      price: 2.99,
+      quantity: 500
+    },
+    {
+      name: 'The Kravitz',
+      description:
+        'Are you gonna go my way',
+      image: 'haircut-6.jpg',
+      category: categories[0]._id,
+      price: 2.99,
+      quantity: 500
+    },
+    {
+      name: 'The Karen',
+      description:
+        'My I speak to your manager',
+      image: 'haircut-5.jpg',
+      category: categories[0]._id,
+      price: 2.99,
+      quantity: 500
+    },
+    {
+      name: 'The Rachelle',
+      description:
+        `I'll be there for you`,
+      image: 'haircut-4.jpg',
+      category: categories[0]._id,
+      price: 2.99,
+      quantity: 500
+    },
+    {
+      name: 'The Mow',
+      description:
+        `Big and tall`,
+      image: 'haircut-3.jpg',
+      category: categories[0]._id,
+      price: 2.99,
+      quantity: 500
+    },
+    {
+      name: 'The Buns',
+      description:
+        `Unless you got buns`,
+      image: 'haircut-2.jpg',
+      category: categories[0]._id,
+      price: 2.99,
+      quantity: 500
+    },
+    {
+      name: 'The Regular',
+      description:
+        `That's it?`,
+      image: 'haircut-1.jpg',
+      category: categories[0]._id,
+      price: 2.99,
+      quantity: 500
+    },
+    {
+      name: 'Dryer',
+      description:
+        `Imported all the way from Dubai the dryer 9000`,
+      image: 'hair-dryer.jpg',
+      category: categories[0]._id,
+      price: 1000.00,
+      quantity: 500
+    },
+    {
+      name: 'Hair Dye',
+      description:
+        `Exclusive dye all the way from France`,
+      image: 'hair-color.jpg',
+      category: categories[0]._id,
+      price: 500.00,
+      quantity: 500
+    },
+    {
+      name: 'The Clippers',
+      description:
+        `All the way from LA, Exclusively signed by Kawhi Leonard`,
+      image: 'clippers.jpg',
+      category: categories[0]._id,
+      price: 5000.00,
+      quantity: 5
+    },
+    {
+      name: 'The Razer',
+      description:
+        `NO not the phone! Stop asking!`,
+      image: 'straight-razor.jpg',
+      category: categories[0]._id,
+      price: 5000.00,
+      quantity: 5
+    },
   ]);
 
   console.log('products seeded');

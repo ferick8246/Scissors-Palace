@@ -23,6 +23,8 @@ import AboutUs from './components/AboutUs';
 import Contact from './components/Contact';
 import Shop from './components/Shop';
 import Footer from './components/layout/Footer';
+import { StoreProvider } from './utils/GlobalState';
+
 
 // Middleware
 // Construct request middleware that will attach the JWT token to every request as an `authorization` header
@@ -48,19 +50,23 @@ function App() {
   return (
     <ApolloProvider client={client}>
         <Router>
-        <NavBar />
-        <Header />
-        <Cart />
-          <Route exact path="/about">
-            <AboutUs />
-          </Route>
-          <Route exact path="/contact">
-            <Contact />
-          </Route>
-          <Route exact path="/shop">
-            <Shop />
-          </Route>
-        <Footer />
+          <div>
+            <StoreProvider>
+              <NavBar />
+              <Header />
+              <Cart />
+                <Route exact path="/about">
+                  <AboutUs />
+                </Route>
+                <Route exact path="/contact">
+                  <Contact />
+                </Route>
+                <Route exact path="/shop">
+                  <Shop  />
+                </Route>
+              <Footer />
+            </StoreProvider>
+          </div>
       </Router>
     </ApolloProvider>
   );
