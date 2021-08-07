@@ -60,6 +60,7 @@ function Shop() {
               _id={product._id}
               image={product.image}
               name={product.name}
+              description={product.description}
               price={product.price}
               quantity={product.quantity}
             />

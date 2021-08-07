@@ -12,6 +12,7 @@ function Product(item) {
     const {
         image,
         name,
+        description,
         _id,
         price,
         quantity
@@ -42,16 +43,19 @@ function Product(item) {
     }
 
     return (
-        <div className='card px-1 py-1'>
-            <Link to={`/products/${ _id }`}>
-                <img src={ `/images/${image}` } alt={ name }/>
-                <p>{ name }</p>
-            </Link>
-            <div>
-                <div>{ quantity } { pluralize('item', quantity) } in stock</div>
-                <span>${price}</span>
+        <div className='flex flex-row justify-start'>
+            <div className='w-80 my-8'>
+                <Link to={`/products/${ _id }`}>
+                    <img className='' src={ `/images/${image}` } alt={ name }/>
+                    <p>{ name }</p>
+                    <p>{ description }</p>
+                </Link>
+                <div>
+                    <div>{ quantity } { pluralize('item', quantity) } in stock</div>
+                    <span>${price}</span>
+                </div>
+                <button onClick={addToCart}>Add to Cart</button>
             </div>
-            <button onClick={addToCart}>Add to Cart</button>
         </div>
     )
 
