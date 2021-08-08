@@ -43,20 +43,24 @@ function Product(item) {
     }
 
     return (
-        // <div className='flex flex-row justify-start'>
-            <div className='w-80 my-8 text-center'>
-                <Link to={`/products/${ _id }`}>
-                    <img className='' src={ `/images/${image}` } alt={ name }/>
-                    <p>{ name }</p>
-                    <p>{ description }</p>
-                </Link>
+        <div className='container mx-auto p-9 bg-white max-w-sm rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition duration-300'>
+            <Link to={`/products/${ _id }`}><img className='rounded-xl' src={ `/images/${image}` } alt={ name }/></Link>
                 <div>
-                    <div>{ quantity } { pluralize('item', quantity) } in stock</div>
-                    <span>${price}</span>
+                    <div className="grid grid-cols-2 gap-x-1.5 justify-between items-center">
+                        <div>
+                            <div className="mt-5 text-2xl font-semibold">{ name }</div>
+                            <div className="text-xs">{ quantity } { pluralize('item', quantity) } in stock</div>
+                            <div className="text-s">${price}</div>
+                        </div>
+                        <div>
+                            <div className="mt-2 text-xs text-gray-400">{ description }</div>
+                        </div>
+                    </div>
                 </div>
-                <button onClick={addToCart}>Add to Cart</button>
-            </div>
-        // </div>
+                <div className="flex justify-center">
+                    <button className="text-white text-md font-semibold bg-yellow-400 py-2 px-4 rounded-lg shadow-md hover:shadow-lg transition duration-500 transform-gpu hover:scale-110" onClick={addToCart}>Add to Cart</button>
+                </div>
+        </div>
     )
 
 }
