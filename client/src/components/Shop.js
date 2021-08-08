@@ -14,6 +14,7 @@ import { idbPromise } from '../utils/helpers'
 function Shop() {
 
     const [state, dispatch] = useStoreContext();
+    console.log(state);
 
   const { currentCategory } = state;
 
