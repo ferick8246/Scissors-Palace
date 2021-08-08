@@ -1,10 +1,16 @@
-import React, { Component } from 'react';
+import React, { Component, useState } from 'react';
 import { TailwindNavbar } from 'tailwind-navbar-react';
 import { Link } from 'react-router-dom';
+
  
-class NavBar extends Component {
-  render () {
-    return (
+function NavBar() {
+
+    const [showDropDown, setShowDropDown] = useState(false); //if showDropDown is false, dont show the dropDown
+    const handleClick = () => {
+      setShowDropDown(!showDropDown); //if showDropDown is true, show the dropDown
+    };
+  
+  return (
       <TailwindNavbar
         brand={
           <img src="./logo512.png" width="40" height="40" alt="Brand logo" />
@@ -15,7 +21,15 @@ class NavBar extends Component {
           <ul className="items-center justify-between pt-4 text-base lg:flex lg:pt-0">
             <li>
               <span className="block px-0 py-3 border-b-2 border-transparent lg:p-4 hover:border-yellow-500" href="/">
-              <Link to="/shop">SHOP</Link>
+                <div onClick={handleClick}>SHOP</div>
+                  {
+                    showDropDown && 
+                    <>
+                      <Link to="/products">Products</Link>
+                      <br></br>
+                      <Link to="/services">Services</Link>
+                    </>
+                  }
               </span>
             </li>
             <li>
@@ -30,7 +44,7 @@ class NavBar extends Component {
             </li>
             <li>
               <span className="block px-0 py-3 border-b-2 border-transparent lg:p-4 hover:border-yellow-500" href="/">
-              <Link to="/press">PRESS</Link>
+              <Link to="/reviews">REVIEWS</Link>
               </span>
             </li>
             <li>
@@ -42,7 +56,6 @@ class NavBar extends Component {
         </nav>
       </TailwindNavbar>
     );
-  }
 }
 
 export default NavBar;
