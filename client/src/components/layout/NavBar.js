@@ -19,17 +19,14 @@ function NavBar() {
       >
         <nav className="justify-between">
           <ul className="items-center justify-between pt-4 text-base lg:flex lg:pt-0">
+          <li>
+              <span className="block px-0 py-3 border-b-2 border-transparent lg:p-4 hover:border-yellow-500" href="/">
+                <Link to="/shop">SHOP</Link>
+              </span>
+            </li>
             <li>
               <span className="block px-0 py-3 border-b-2 border-transparent lg:p-4 hover:border-yellow-500" href="/">
-                <div onClick={handleClick}>SHOP</div>
-                  {
-                    showDropDown && 
-                    <>
-                      <Link to="/products">Products</Link>
-                      <br></br>
-                      <Link to="/services">Services</Link>
-                    </>
-                  }
+                <Link to="/services">SERVICES</Link>
               </span>
             </li>
             <li>
