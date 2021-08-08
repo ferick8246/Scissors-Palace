@@ -23,6 +23,8 @@ import AboutUs from './components/AboutUs';
 import Contact from './components/Contact';
 import Shop from './components/Shop';
 import Footer from './components/layout/Footer';
+import Services from './components/Services';
+import Product from './components/Product';
 import { StoreProvider } from './utils/GlobalState';
 
 
@@ -57,6 +59,12 @@ function App() {
               <Cart />
                 <Route exact path="/about">
                   <AboutUs />
+                </Route>
+                <Route exact path="/products">
+                  <Product />
+                </Route>
+                <Route exact path="/services">
+                  <Services />
                 </Route>
                 <Route exact path="/contact">
                   <Contact />
