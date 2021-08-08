@@ -26,6 +26,7 @@ import Footer from './components/layout/Footer';
 import Services from './components/Services';
 import Product from './components/Product';
 import Reviews from './components/Reviews';
+import Gallery from './components/Gallery';
 import { StoreProvider } from './utils/GlobalState';
 
 
@@ -75,6 +76,9 @@ function App() {
                 </Route>
                 <Route exact path="/reviews">
                   <Reviews  />
+                </Route>
+                <Route exact path="/gallery">
+                  <Gallery />
                 </Route>
               <Footer />
             </StoreProvider>
