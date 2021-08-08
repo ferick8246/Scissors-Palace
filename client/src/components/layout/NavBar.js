@@ -44,7 +44,7 @@ function NavBar() {
             </li>
             <li>
               <span className="block px-0 py-3 border-b-2 border-transparent lg:p-4 hover:border-yellow-500" href="/">
-              <Link to="/press">PRESS</Link>
+              <Link to="/reviews">REVIEWS</Link>
               </span>
             </li>
             <li>

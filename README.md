@@ -83,7 +83,7 @@
 * [Erick Flores](https://github.com/ferick8246)  
 * [Kevin Henley](https://github.com/KevinHenleyCode)  
 
-### 🛠 🥸 DevOps Engineer & Quality Assurance:  
+### 🛠 DevOps Engineer & Quality Assurance:  
 * [Jesse Ceniceros](https://github.com/Jesse2360)  
 
 ## Contact   

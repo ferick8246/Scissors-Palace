@@ -25,6 +25,7 @@ import Shop from './components/Shop';
 import Footer from './components/layout/Footer';
 import Services from './components/Services';
 import Product from './components/Product';
+import Reviews from './components/Reviews';
 import { StoreProvider } from './utils/GlobalState';
 
 
@@ -71,6 +72,9 @@ function App() {
                 </Route>
                 <Route exact path="/shop">
                   <Shop  />
+                </Route>
+                <Route exact path="/reviews">
+                  <Reviews  />
                 </Route>
               <Footer />
             </StoreProvider>
