@@ -19,7 +19,7 @@ function AboutUs() {
                         <div className="rounded overflow-hidden shadow-md bg-white">
                             <div className="absolute -mt-20 w-full flex justify-center">
                                 <div className="h-32 w-32">
-                                    <img src="https://cdn.tuk.dev/assets/photo-1564061170517-d3907caa96ea.jfif" alt="Display Picture of Andres Berlin" role="img" className="rounded-full object-cover h-full w-full shadow-md" />
+                                    <img src="./images/profile/ericPic.jpg" alt="Display Picture of Eric Flores" role="img" className="rounded-full object-cover h-full w-full shadow-md" />
                                 </div>
                             </div>
                             <div className="px-6 mt-16">
@@ -27,7 +27,7 @@ function AboutUs() {
                                 <p className="text-gray-800 text-sm text-center">Chief Executive Officer</p>
                                 <p className="text-center text-gray-600 text-base pt-3 font-normal">The CEO's role in raising a company's corporate IQ is to establish an atmosphere that promotes knowledge sharing and collaboration.</p>
                                 <div className="w-full flex justify-center pt-5 pb-5">
-                                    <a href="javascript:void(0)" className="mx-5">
+                                    <a href="https://github.com/ferick8246" className="mx-5">
                                         <div aria-label="Github" role="img">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#718096" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="feather feather-github">
                                                 <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
@@ -42,7 +42,7 @@ function AboutUs() {
                     <div className="rounded overflow-hidden shadow-md bg-white">
                         <div className="absolute -mt-20 w-full flex justify-center">
                             <div className="h-32 w-32">
-                                <img src="./images/profile/ida.jpeg" alt="Display Picture of Silene Tokyo" role="img" className="rounded-full object-cover h-full w-full shadow-md" />
+                                <img src="./images/profile/idaPic.jpg" alt="Display Picture of Ida Shalilian" role="img" className="rounded-full object-cover h-full w-full shadow-md" />
                             </div>
                         </div>
                         <div className="px-6 mt-16">
@@ -65,7 +65,7 @@ function AboutUs() {
                     <div className="rounded overflow-hidden shadow-md bg-white">
                         <div className="absolute -mt-20 w-full flex justify-center">
                             <div className="h-32 w-32">
-                                <img src="https://cdn.tuk.dev/assets/photo-1566753323558-f4e0952af115.jfif" alt="Display Picture of Johnson Stone" role="img" className="rounded-full object-cover h-full w-full shadow-md" />
+                                <img src="https://cdn.tuk.dev/assets/photo-1566753323558-f4e0952af115.jfif" alt="Display Picture of Jessie Ceniceros" role="img" className="rounded-full object-cover h-full w-full shadow-md" />
                             </div>
                         </div>
                         <div className="px-6 mt-16">
@@ -73,7 +73,7 @@ function AboutUs() {
                             <p className="text-gray-800 text-sm text-center">Manager Development</p>
                             <p className="text-center text-gray-600 text-base pt-3 font-normal">Our services encompass the assessment and repair of property damage caused by water, fire, smoke, or mold. We can also be a part of the restoration.</p>
                             <div className="w-full flex justify-center pt-5 pb-5">
-                                <a href="javascript:void(0)" className="mx-5">
+                                <a href="https://github.com/Jesse2360" className="mx-5">
                                     <div aria-label="Github" role="img">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#718096" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="feather feather-github">
                                             <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
@@ -88,7 +88,7 @@ function AboutUs() {
                     <div className="rounded overflow-hidden shadow-md bg-white">
                         <div className="absolute -mt-20 w-full flex justify-center">
                             <div className="h-32 w-32">
-                                <img src="https://cdn.tuk.dev/assets/boy-smiling_23-2148155640.jpg" alt="Display Picture of Dean Jones" role="img" className="rounded-full object-cover h-full w-full shadow-md" />
+                                <img src="./images/profile/kevinPic.jpg" alt="Display Picture of Kevin Henley" role="img" className="rounded-full object-cover h-full w-full shadow-md" />
                             </div>
                         </div>
                         <div className="px-6 mt-16">
@@ -96,7 +96,7 @@ function AboutUs() {
                             <p className="text-gray-800 text-sm text-center">Principal Software Engineer</p>
                             <p className="text-center text-gray-600 text-base pt-3 font-normal">An avid open-source developer who loves to be creative and inventive. I have 20 years of experience in the field.</p>
                             <div className="w-full flex justify-center pt-5 pb-5">
-                                <a href="javascript:void(0)" className="mx-5">
+                                <a href="https://github.com/KevinHenleyCode" className="mx-5">
                                     <div aria-label="Github" role="img">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#718096" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="feather feather-github">
                                             <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
@@ -111,7 +111,7 @@ function AboutUs() {
                     <div className="rounded overflow-hidden shadow-md bg-white">
                         <div className="absolute -mt-20 w-full flex justify-center">
                             <div className="h-32 w-32">
-                                <img src="https://cdn.tuk.dev/assets/blond-man-happy-expression_1194-2873.jpg" alt="Display Picture of Rachel Adams" role="img" className="rounded-full object-cover h-full w-full shadow-md" />
+                                <img src="./images/profile/celestePic.jpg" alt="Display Picture of Rachel Adams" role="img" className="rounded-full object-cover h-full w-full shadow-md" />
                             </div>
                         </div>
                         <div className="px-6 mt-16">
@@ -119,7 +119,7 @@ function AboutUs() {
                             <p className="text-gray-800 text-sm text-center">Product Design Head</p>
                             <p className="text-center text-gray-600 text-base pt-3 font-normal">Product designer with interests in immersive computing and XR, political ventures, and emerging technologies. Able to take ideas and give them a life.</p>
                             <div className="w-full flex justify-center pt-5 pb-5">
-                                <a href="javascript:void(0)" className="mx-5">
+                                <a href="https://github.com/celestealexmoore" className="mx-5">
                                     <div aria-label="Github" role="img">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#718096" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="feather feather-github">
                                             <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
