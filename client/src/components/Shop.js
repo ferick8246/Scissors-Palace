@@ -14,6 +14,7 @@ import { idbPromise } from '../utils/helpers'
 function Shop() {
 
     const [state, dispatch] = useStoreContext();
+    console.log(state);
 
   const { currentCategory } = state;
 
@@ -49,28 +50,30 @@ function Shop() {
   }
 
     return(
-        <div className="my-2">
+        <div className="">
         <MetaData title={'Shop'}/>
-      <h2>Our Products:</h2>
-      {state.products.length ? (
-        <div className="flex-row">
-          {filterProducts().map((product) => (
-            <Product
-              key={product._id}
-              _id={product._id}
-              image={product.image}
-              name={product.name}
-              description={product.description}
-              price={product.price}
-              quantity={product.quantity}
-            />
-          ))}
+          <h2 className="text-center">Our Products:</h2>
+            <div className="container mx-auto justify-items-center">
+            {state.products.length ? (
+              <div className="grid place-items-center grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+                {filterProducts().map((product) => (
+                  <Product
+                    key={product._id}
+                    _id={product._id}
+                    image={product.image}
+                    name={product.name}
+                    description={product.description}
+                    price={product.price}
+                    quantity={product.quantity}
+                  />
+                ))}
+              </div>
+              ) : (
+              <h3>You haven't added any products yet! Did you remember to seed?</h3>
+              )}
+            </div>
+            {loading ? <img src='' alt="loading" /> : null}
         </div>
-      ) : (
-        <h3>You haven't added any products yet!</h3>
-      )}
-      {loading ? <img src='' alt="loading" /> : null}
-    </div>
     )
 }
 

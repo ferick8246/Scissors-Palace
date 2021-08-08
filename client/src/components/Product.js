@@ -43,8 +43,8 @@ function Product(item) {
     }
 
     return (
-        <div className='flex flex-row justify-start'>
-            <div className='w-80 my-8'>
+        // <div className='flex flex-row justify-start'>
+            <div className='w-80 my-8 text-center'>
                 <Link to={`/products/${ _id }`}>
                     <img className='' src={ `/images/${image}` } alt={ name }/>
                     <p>{ name }</p>
@@ -56,7 +56,7 @@ function Product(item) {
                 </div>
                 <button onClick={addToCart}>Add to Cart</button>
             </div>
-        </div>
+        // </div>
     )
 
 }
