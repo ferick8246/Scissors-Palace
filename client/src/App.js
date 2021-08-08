@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './index.css';
+import './style/calendar.css'
 
 // Apollo
 import {
@@ -27,6 +28,7 @@ import Services from './components/Services';
 import Product from './components/Product';
 import Reviews from './components/Reviews';
 import Gallery from './components/Gallery';
+import Calendar from './components/Calendar';
 import { StoreProvider } from './utils/GlobalState';
 
 
@@ -79,6 +81,9 @@ function App() {
                 </Route>
                 <Route exact path="/gallery">
                   <Gallery />
+                </Route>
+                <Route exact path="/calendar">
+                  <Calendar />
                 </Route>
               <Footer />
             </StoreProvider>
