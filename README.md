@@ -44,9 +44,15 @@
     WHEN the user chooses *Products*
     THEN the user is presented with an ecommerce markup of salon products
 
+    GIVEN that a user selects a product
+    THEN the user will view the product in their shopping cart and have the ability to pay for the product.
+
     GIVEN that a user selects *SHOP*
     WHEN the user chooses *Services*
     THEN the user is presented with salon services, photos, descriptions and pricing.
+
+    GIVEN that a user selects a service
+    THEN the user is presented with a calendar to book the service requested and prompted a confirmation.
 
     GIVEN that a user selects *ABOUT*
     THEN the user will view all developers and their roles in this project
