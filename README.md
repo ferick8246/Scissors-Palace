@@ -1,7 +1,9 @@
 <div align="center">
 
 # Scissors Palace
-### _A MERN stack e-commerce website_
+### _A MERN full-stack e-commerce website, featuring Mongoose/MongoDB, Express, React, and Node.js to demo a salon/barbershop website._
+
+---
 </div>
 
 ## Table of Contents
@@ -11,6 +13,7 @@
   - [Contributors](#contributors)
   - [License](#license)
 
+---
 
 ## Installation
 
@@ -20,9 +23,16 @@ Currently deployed [on heroku](https://www.heroku.com/)
 
 ![Demo](assets/demo.png)  
 
-<div align="center">
+
 
 ## Features
+
+- Single-page application using React components
+- Responsive CSS to adapt to mobile devices
+- Functioning contact form that sends you e-mails once submitted
+
+---
+<div align="center">
 
 ## Contributors
 
@@ -31,6 +41,8 @@ Currently deployed [on heroku](https://www.heroku.com/)
 [![jesse](https://github.com/Jesse2360.png?size=64)](https://github.com/Jesse2360)[![linkedin](assets/linkedin.svg)](https://www.linkedin.com/in/jesse-ceniceros-196430202/)
 [![ida](https://github.com/corgimaman.png?size=64)](https://github.com/corgimaman)[![linkedin](assets/linkedin.svg)](https://www.linkedin.com/in/ida-s-86b21b68/)
 [![kevin](https://github.com/KevinHenleyCode.png?size=64)](https://github.com/KevinHenleyCode)[![linkedin](assets/linkedin.svg)](https://www.linkedin.com/in/kevin-henley)
+
+---
 
 ## License
 
