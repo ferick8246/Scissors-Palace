@@ -25,7 +25,7 @@ function Services(){
                     </svg>
                 </div>
 
-                
+
                 <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
                     <h2 class="text-gray-900 text-lg title-font font-medium mb-2">Woman's Shampoo</h2>
                     <p class="leading-relaxed text-base">Each haircut begins with a complete consultation and hair analysis, followed by a magnificent shampoo and relaxing scalp massage. After your cut, we finish with a technical blow dry style and our recommendations for at home hair care. </p>
@@ -51,7 +51,7 @@ function Services(){
                 </div>
                 
                 <div class="sm:w-32 sm:order-none order-first sm:h-32 h-20 w-20 sm:ml-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 flex-shrink-0">
-                    <img src="./images/Square/partHighlight.png" alt="Display Picture of partial highlight" role="img" className="rounded-full object-cover h-full w-full shadow-md"></img>
+                    <img src="./images/partHighlight.png" alt="Display Picture of partial highlight" role="img" className="rounded-full object-cover h-full w-full shadow-md"></img>
                 </div>
                 </div>
 

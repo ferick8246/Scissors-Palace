@@ -20,7 +20,7 @@ db.once('open', async () => {
     {
       name: 'Taperfade',
       description:
-        'A fade that tapers',
+        'Start lookin fresh with a fade that tapers',
       image: 'haircut-1.jpg',
       category: categories[0]._id,
       price: 2.99,
@@ -29,7 +29,10 @@ db.once('open', async () => {
     {
       name: 'The Weeknd',
       description:
-        `Can't feel my face`,
+        `We both know we can't go without it
+        She told me, "You'll never be in love" oh, oh, ooh!
+        I can't feel my face when I'm with you, but I love it, 
+        but I love it, oh`,
       image: 'haircut-7.jpg',
       category: categories[0]._id,
       price: 2.99,
@@ -38,7 +41,9 @@ db.once('open', async () => {
     {
       name: 'The Kravitz',
       description:
-        'Are you gonna go my way',
+        `But what I really want to know is
+        Are you gonna go my way?
+        And I got to, got to know`,
       image: 'haircut-6.jpg',
       category: categories[0]._id,
       price: 2.99,
@@ -47,7 +52,7 @@ db.once('open', async () => {
     {
       name: 'The Karen',
       description:
-        'My I speak to your manager',
+        `I don't like your tone, do you know who I am?... May I speak to your manager?`,
       image: 'haircut-5.jpg',
       category: categories[0]._id,
       price: 2.99,
@@ -56,17 +61,17 @@ db.once('open', async () => {
     {
       name: 'The Rachelle',
       description:
-        `I'll be there for you`,
+        `PIVOT!... And just to let you know... we were on a break!`,
       image: 'haircut-4.jpg',
       category: categories[0]._id,
       price: 2.99,
       quantity: 500
     },
     {
-      name: 'The Mow',
+      name: 'Mr-T',
       description:
-        `Big and tall`,
-      image: 'haircut-3.jpg',
+        `I pitty the fool who don't rock the mowhawk!`,
+      image: 'Mr-T.jpg',
       category: categories[0]._id,
       price: 2.99,
       quantity: 500
@@ -81,10 +86,10 @@ db.once('open', async () => {
       quantity: 500
     },
     {
-      name: 'The Regular',
+      name: 'The Kawhi Leonard',
       description:
-        `That's it?`,
-      image: 'haircut-1.jpg',
+        `I'm a fun guy. There's just more questions that you need to be asking me.`,
+      image: 'kawhi-leonard.jpg',
       category: categories[0]._id,
       price: 2.99,
       quantity: 500
@@ -123,6 +128,15 @@ db.once('open', async () => {
       image: 'straight-razor.jpg',
       category: categories[0]._id,
       price: 5000.00,
+      quantity: 5
+    },
+    {
+      name: 'Shampoo',
+      description:
+        `All the way from Dubai. Made from pure gold.`,
+      image: 'shampoo.jpg',
+      category: categories[0]._id,
+      price: 1000.00,
       quantity: 5
     },
   ]);
