@@ -34,6 +34,7 @@
     "react-helmet": "^6.1.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "^4.0.3",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.7",
     "tailwind-navbar-react": "^1.0.3"
   },
   "browserslist": {
