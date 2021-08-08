@@ -25,7 +25,7 @@ function AboutUs() {
                             <div className="px-6 mt-16">
                                 <h1 className="font-bold text-3xl text-center mb-1">Erick Flores</h1>
                                 <p className="text-gray-800 text-sm text-center">Chief Executive Officer</p>
-                                <p className="text-center text-gray-600 text-base pt-3 font-normal">The CEO's role in raising a company's corporate IQ is to establish an atmosphere that promotes knowledge sharing and collaboration.</p>
+                                <p className="text-center text-gray-600 text-base pt-3 font-normal">Experienced leader in raising a company's corporate IQ and establishing an atmosphere that promotes knowledge sharing and collaboration.</p>
                                 <div className="w-full flex justify-center pt-5 pb-5">
                                     <a href="https://github.com/ferick8246" className="mx-5">
                                         <div aria-label="Github" role="img">
@@ -47,8 +47,9 @@ function AboutUs() {
                         </div>
                         <div className="px-6 mt-16">
                             <h1 className="font-bold text-3xl text-center mb-1">Ida Shalilian</h1>
-                            <p className="text-gray-800 text-sm text-center">Product Design Head</p>
-                            <p className="text-center text-gray-600 text-base pt-3 font-normal">Worked on the front end React components and styling using Tailwind CSS.</p>
+                            <p className="text-gray-800 text-sm text-center">Front-End Developer</p>
+                            <p className="text-center text-gray-600 text-base pt-3 font-normal">Specializing in Front-End React components and styling, using Tailwind CSS.
+                            Focused on being a valuable part of any team I am on and believe in the team rising together.</p>
                             <div className="w-full flex justify-center pt-5 pb-5">
                                 <a href="http://github.com/corgimaman" className="mx-5">
                                     <div aria-label="Github" role="img">
@@ -65,7 +66,7 @@ function AboutUs() {
                     <div className="rounded overflow-hidden shadow-md bg-white">
                         <div className="absolute -mt-20 w-full flex justify-center">
                             <div className="h-32 w-32">
-                                <img src="https://cdn.tuk.dev/assets/photo-1566753323558-f4e0952af115.jfif" alt="Display Picture of Jessie Ceniceros" role="img" className="rounded-full object-cover h-full w-full shadow-md" />
+                                <img src="./images/profile/jessePic.jpg" alt="Display Picture of Jessie Ceniceros" role="img" className="rounded-full object-cover h-full w-full shadow-md" />
                             </div>
                         </div>
                         <div className="px-6 mt-16">
@@ -94,7 +95,8 @@ function AboutUs() {
                         <div className="px-6 mt-16">
                             <h1 className="font-bold text-3xl text-center mb-1">Kevin Henley</h1>
                             <p className="text-gray-800 text-sm text-center">Principal Software Engineer</p>
-                            <p className="text-center text-gray-600 text-base pt-3 font-normal">An avid open-source developer who loves to be creative and inventive. I have 20 years of experience in the field.</p>
+                            <p className="text-center text-gray-600 text-base pt-3 font-normal">An avid open-source developer who loves to be creative and inventive. 
+                            If one portion of the team needs help with a task, I have no issue jumping in to assist on anything required.</p>
                             <div className="w-full flex justify-center pt-5 pb-5">
                                 <a href="https://github.com/KevinHenleyCode" className="mx-5">
                                     <div aria-label="Github" role="img">
@@ -116,8 +118,9 @@ function AboutUs() {
                         </div>
                         <div className="px-6 mt-16">
                             <h1 className="font-bold text-3xl text-center mb-1">Celeste Moore</h1>
-                            <p className="text-gray-800 text-sm text-center">Product Design Head</p>
-                            <p className="text-center text-gray-600 text-base pt-3 font-normal">Product designer with interests in immersive computing and XR, political ventures, and emerging technologies. Able to take ideas and give them a life.</p>
+                            <p className="text-gray-800 text-sm text-center">Front-End Developer, Research & Development</p>
+                            <p className="text-center text-gray-600 text-base pt-3 font-normal">Front-End Developer with a creative eye and knack for aesthetics. Interests include 
+                            Googling emerging technologies and sharing Tech Tea with friends. Skilled in taking ideas and giving them a life with HTML, CSS, Javascript, and ReactJS.</p>
                             <div className="w-full flex justify-center pt-5 pb-5">
                                 <a href="https://github.com/celestealexmoore" className="mx-5">
                                     <div aria-label="Github" role="img">
