@@ -1,5 +1,4 @@
 # Scissors Palace
-### By: Team Mongoose
 
   ## Table of Contents
 
