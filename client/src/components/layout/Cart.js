@@ -88,7 +88,7 @@ const Cart = () => {
             {Auth.loggedIn() ? (
               <button onClick={submitCheckout}>Checkout</button>
             ) : (
-              <span>(log in to check out)</span>
+              <span><br/>(log in to check out)</span>
             )}
           </div>
         </div>
@@ -97,7 +97,7 @@ const Cart = () => {
           <span role="img" aria-label="shocked">
             😱
           </span>
-          You haven't added anything to your cart yet!
+          Your cart is currently empty!
         </h3>
       )}
     </div>
