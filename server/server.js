@@ -21,12 +21,11 @@ app.use(express.json);
 
 if (process.env.NODE_ENV === 'production') {
     app.use(express.static(path.join(__dirname, '../react-ui/build')));
+
+    app.get('*', (req, res) => {
+        res.sendFile(path.join(__dirname, '../react-ui/build/index.html'));
+    })
 }
-
-
-app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, '../react-ui/build/index.html'));
-})
 
 
 // message that the port is up and running
