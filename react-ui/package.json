@@ -35,7 +35,7 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "^4.0.3",
     "autoprefixer": "^9.8.6",
-    "postcss": "^7.0.36",
+    "postcss": "^8",
     "tailwindcss": "2.2.7",
     "tailwind-navbar-react": "^1.0.3"
   },
