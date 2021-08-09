@@ -5,9 +5,9 @@
   "main": "index.js",
   "proxy": "http://localhost:3005",
   "scripts": {
-    "start": "craco start",
-    "build": "craco build",
-    "test": "craco test",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
   "author": "",
