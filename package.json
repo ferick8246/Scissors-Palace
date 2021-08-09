@@ -17,4 +17,4 @@
   }
 }
 
-"install": "npm i && cd server && npm i && cd ../react-ui/ && npm i"
+
