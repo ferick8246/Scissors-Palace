@@ -6,7 +6,7 @@
   "proxy": "http://localhost:3005",
   "scripts": {
     "start": "craco start --verbose",
-    "build": "craco build --verbose",
+    "build": "craco build",
     "test": "craco test",
     "eject": "react-scripts eject"
   },
