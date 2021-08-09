@@ -1,8 +1,7 @@
 import React, { Component, useState } from 'react';
 import { TailwindNavbar } from 'tailwind-navbar-react';
 import { Link } from 'react-router-dom';
-
- 
+import login from '../Login'
 function NavBar() {
 
     const [showDropDown, setShowDropDown] = useState(false); //if showDropDown is false, dont show the dropDown
@@ -47,6 +46,11 @@ function NavBar() {
             <li>
               <span className="block px-0 py-3 border-b-2 border-transparent lg:p-4 hover:border-yellow-500" href="/">
               <Link to="/contact">CONTACT</Link>
+              </span>
+            </li>
+            <li>
+              <span className="block px-0 py-3 border-b-2 border-transparent lg:p-4 hover:border-yellow-500" href="/">
+              <Link to="/login">LOGIN/SIGNUP</Link>
               </span>
             </li>
           </ul>

@@ -22,6 +22,8 @@ import Cart from './components/layout/Cart'
 import NavBar from './components/layout/NavBar';
 import AboutUs from './components/AboutUs';
 import Contact from './components/Contact';
+import Login from './components/Login';
+import Signup from './components/Signup';
 import Shop from './components/Shop';
 import Footer from './components/layout/Footer';
 import Services from './components/Services';
@@ -63,6 +65,8 @@ function App() {
               <Cart />
               <Route exact path="/about" component={AboutUs} />
               <Route exact path="/contact" component={Contact} />
+              <Route exact path="/login" component={Login} />
+              <Route exact path="/signup" component={Signup} />
               <Route exact path="/shop" component={Shop}/>
               <Route exact path="/services" component={Services} />
               <Route exact path="/reviews" component={Reviews} />
