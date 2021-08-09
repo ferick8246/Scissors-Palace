@@ -5,9 +5,7 @@
   "main": "index.js",
   "proxy": "http://localhost:3005",
   "scripts": {
-    "start": "npm run run:css && react-scripts start",
-    "run": "npx tailwind build tailwind.css -o vendor.css", 
-    "dev": "craco start",
+    "start": "craco start",
     "build": "craco build",
     "test": "craco test",
     "eject": "react-scripts eject"
