@@ -49,11 +49,7 @@ function Product(item) {
                     <div className="grid grid-cols-2 gap-x-1.5 justify-between items-center">
                         <div>
                             <div className="mt-5 text-2xl font-semibold">{ name }</div>
-                            <div className="text-xs">{ quantity } { pluralize('item', quantity) } in stock</div>
                             <div className="text-s">${price}</div>
-                        </div>
-                        <div>
-                            <div className="mt-2 text-xs text-gray-400">{ description }</div>
                         </div>
                     </div>
                 </div>
