@@ -82,6 +82,11 @@ function Detail() {
   }
 
 
+if (currentProduct.quantity === 1) {
+  var trueQuantity = 'Book an Appointment'
+}else {
+  var trueQuantity = `Quantity Available: ${currentProduct.quantity}`
+}
 
   return (
     <>
@@ -90,6 +95,7 @@ function Detail() {
           <Link to="/shop">← Products</Link>
           <h2>{currentProduct.name}</h2>
           <p>{currentProduct.description}</p>
+          <p>{trueQuantity}</p>
           
           <p>
             <strong>Price:</strong>${currentProduct.price}{' '}
