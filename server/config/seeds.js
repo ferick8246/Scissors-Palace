@@ -72,8 +72,8 @@ db.once('open', async () => {
         `I pitty the fool who don't rock the mowhawk!`,
       image: 'Mr-T.jpg',
       category: categories[0]._id,
-      price: 2.99,
-      quantity: 500
+      price: 30.00,
+      quantity: 'Check Availability'
     },
     {
       name: 'The Buns',
