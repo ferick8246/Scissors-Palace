@@ -35,16 +35,16 @@ function Login(props) {
 
   return (
 
-    <div className="container my-1">
+    <div className="">
 
-      <Link to="/signup">← Head on over to Signup</Link>
+      <Link to="/signup">← Hey you don't have an account. Go Signup!</Link>
 
       <h2>Login</h2>
       <form onSubmit={handleFormSubmit}>
-        <div className="flex-row space-between my-2">
+        <div className="">
           <label htmlFor="email">Email:</label>
           <input
-            placeholder="youremail@test.com"
+            placeholder="email@email.com"
             name="email"
             type="email"
             id="email"
@@ -52,10 +52,10 @@ function Login(props) {
           />
         </div>
 
-        <div className="flex-row space-between my-2">
+        <div className="">
           <label htmlFor="pwd">Password:</label>
           <input
-            placeholder="******"
+            placeholder="password"
             name="password"
             type="password"
             id="pwd"
@@ -68,7 +68,7 @@ function Login(props) {
             <p className="error-text">Hey you gave us the wrong credentials! Try again!</p>
           </div>
         ) : null}
-        <div className="flex-row flex-end">
+        <div className="">
           <button type="submit">Submit</button>
         </div>
       </form>
