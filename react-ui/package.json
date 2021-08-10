@@ -5,7 +5,7 @@
   "main": "index.js",
   "proxy": "http://localhost:3005",
   "scripts": {
-    "start": "craco start",
+    "start": "craco start --verbose",
     "build": "craco build",
     "test": "craco test",
     "eject": "react-scripts eject"
@@ -51,9 +51,5 @@
       "last 1 safari version"
     ]
   },
-  "devDependencies": {
-    "autoprefixer": "^9.8.6",
-    "postcss": "^7.0.36",
-    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.7"
-  }
+  "devDependencies": {}
 }
