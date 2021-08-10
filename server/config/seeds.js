@@ -54,8 +54,8 @@ db.once('open', async () => {
         `I don't like your tone, do you know who I am?... May I speak to your manager?`,
       image: 'haircut-5.jpg',
       category: categories[0]._id,
-      price: 2.99,
-      quantity: 500
+      price: 120.99,
+      quantity: 'Check Availability'
     },
     {
       name: 'The Rachelle',
