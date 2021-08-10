@@ -12,6 +12,8 @@ import {
 import { QUERY_PRODUCTS } from '../utils/queries';
 import { idbPromise } from '../utils/helpers';
 
+
+
 function Detail() {
 
   const [state, dispatch] = useStoreContext();
