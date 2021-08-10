@@ -63,8 +63,8 @@ db.once('open', async () => {
         `PIVOT!... And just to let you know... we were on a break!`,
       image: 'haircut-4.jpg',
       category: categories[0]._id,
-      price: 2.99,
-      quantity: 500
+      price: 220.99,
+      quantity: 'Check Availability'
     },
     {
       name: 'Mr-T',
