@@ -7,7 +7,7 @@ function Reviews() {
         <div class="container px-5 py-24 mx-auto">
           <div class="xl:w-1/2 lg:w-3/4 w-full mx-auto text-center">
             <img
-              src="./images/rock.png"
+              src="./images/rock.jpg"
               class="inline-block w-18 h-18 text-gray-400 mb-8"
             ></img>
             <p class="leading-relaxed text-lg">
@@ -27,7 +27,7 @@ function Reviews() {
         <div class="container px-5 py-24 mx-auto">
           <div class="xl:w-1/2 lg:w-3/4 w-full mx-auto text-center">
             <img
-              src="./images/yonce.png"
+              src="./images/yonce.jpg"
               class="inline-block w-18 h-18 text-gray-400 mb-8"
             ></img>
             <p class="leading-relaxed text-lg">
@@ -46,7 +46,7 @@ function Reviews() {
         <div class="container px-5 py-24 mx-auto">
           <div class="xl:w-1/2 lg:w-3/4 w-full mx-auto text-center">
             <img
-              src="./images/oprah.png"
+              src="./images/oprah.jpg"
               class="inline-block w-17 h-17 text-gray-400 mb-8"
             ></img>
             <p class="leading-relaxed text-lg">
@@ -65,7 +65,7 @@ function Reviews() {
         <div class="container px-5 py-24 mx-auto">
           <div class="xl:w-1/2 lg:w-3/4 w-full mx-auto text-center">
             <img
-              src="./images/trump.png"
+              src="./images/trump.jpg"
               class="inline-block w-18 h-18 text-gray-400 mb-8"
             ></img>
             <p class="leading-relaxed text-lg">
@@ -91,7 +91,7 @@ function Reviews() {
         <div class="container px-5 py-24 mx-auto">
           <div class="xl:w-1/2 lg:w-3/4 w-full mx-auto text-center">
             <img
-              src="./images/bezos.png"
+              src="./images/bezos.jpg"
               class="inline-block w-18 h-18 text-gray-400 mb-8"
             ></img>
             <p class="leading-relaxed text-lg">
