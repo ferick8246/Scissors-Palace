@@ -16,18 +16,17 @@ const server = new ApolloServer({
 // middleware
 server.applyMiddleware({ app });
 app.use(express.urlencoded({ extended: true }));
-app.use(express.json);
-
+app.use(express.json());
 
 if (process.env.NODE_ENV === 'production') {
-    app.use(express.static(path.join(__dirname, '..react-ui/build')));
+    app.use(express.static(path.join(__dirname, '..', 'react-ui', 'build')));
+    console.log('mode is production');
 }
 
-
 app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, '../react-ui/build/index.html'));
+    console.log(path.resolve(__dirname, '..', 'react-ui', 'build', 'index.html'));
+    res.sendFile(path.resolve(__dirname, '..', 'react-ui', 'build', 'index.html'));
 })
-
 
 // message that the port is up and running
 db.once('open', () => { 
