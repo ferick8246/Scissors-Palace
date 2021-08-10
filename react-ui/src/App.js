@@ -71,7 +71,7 @@ function App() {
               <Route exact path="/services" component={Services} />
               <Route exact path="/reviews" component={Reviews} />
               <Route exact path="/gallery" component={Gallery} />
-              <Route exact path="/calendar" component={Calendar} />
+              <Route exact path="/calendar/:service" component={Calendar} />
               <Footer />
             </StoreProvider>
           </div>
