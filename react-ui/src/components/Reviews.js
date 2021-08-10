@@ -9,6 +9,7 @@ function Reviews() {
             <img
               src="./images/rock.jpg"
               class="inline-block w-18 h-18 text-gray-400 mb-8"
+              alt="picture of The Rock"
             ></img>
             <p class="leading-relaxed text-lg">
               Jesse is great! Thoughtful and careful, he doesn’t whip through
@@ -29,6 +30,7 @@ function Reviews() {
             <img
               src="./images/yonce.jpg"
               class="inline-block w-18 h-18 text-gray-400 mb-8"
+              alt="picture of Beyonce"
             ></img>
             <p class="leading-relaxed text-lg">
               I’ve been seeing Ida here for my color for the last few years. No
@@ -48,6 +50,7 @@ function Reviews() {
             <img
               src="./images/oprah.jpg"
               class="inline-block w-17 h-17 text-gray-400 mb-8"
+              alt="picture of Oprah"
             ></img>
             <p class="leading-relaxed text-lg">
               Go see Celeste! She is fantastic and saved my hair who someone
@@ -67,6 +70,7 @@ function Reviews() {
             <img
               src="./images/trump.jpg"
               class="inline-block w-18 h-18 text-gray-400 mb-8"
+              alt="picture of Trump"
             ></img>
             <p class="leading-relaxed text-lg">
               Nobody cuts hair like Kevin. Nobody. If he gets any kindler or
@@ -93,6 +97,7 @@ function Reviews() {
             <img
               src="./images/bezos.jpg"
               class="inline-block w-18 h-18 text-gray-400 mb-8"
+              alt="picture of Bezos"
             ></img>
             <p class="leading-relaxed text-lg">
               Erick is my go to person when I getting my hair cut in Houston. I

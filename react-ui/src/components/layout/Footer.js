@@ -47,9 +47,9 @@ const Footer = () => {
             <a href="tel:+12813308004">(281) 330-8004</a>
             <br/>
             <div className="space-x-5">
-            <a href="http://instagram.com/"><FontAwesomeIcon icon={faInstagram} size="lg"/></a>
-            <a href="http://facebook.com/"><FontAwesomeIcon icon={faFacebookSquare} size="lg"/></a>
-            <a href="http://twitter.com/"><FontAwesomeIcon icon={faTwitterSquare} size="lg" /></a>
+            <a href="http://instagram.com/" aria-label='link to instagram'><FontAwesomeIcon icon={faInstagram} size="lg"/></a>
+            <a href="http://facebook.com/" aria-label='link to facebook'><FontAwesomeIcon icon={faFacebookSquare} size="lg"/></a>
+            <a href="http://twitter.com/" aria-label='link to twitter'><FontAwesomeIcon icon={faTwitterSquare} size="lg" /></a>
             </div>
           </div>
         </div>
