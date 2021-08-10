@@ -1,6 +1,7 @@
 import React, { Component, useState } from 'react';
 import { TailwindNavbar } from 'tailwind-navbar-react';
 import { Link } from 'react-router-dom';
+import Auth from '../../utils/auth';
 import login from '../Login'
 function NavBar() {
 
@@ -50,7 +51,13 @@ function NavBar() {
             </li>
             <li>
               <span className="block px-0 py-3 border-b-2 border-transparent lg:p-4 hover:border-yellow-500" href="/">
-              <Link to="/login">LOGIN/SIGNUP</Link>
+                { Auth.loggedIn() ? 
+                   (
+                  <a href="/" onClick={() => Auth.logout()}>
+                  LOGOUT
+                  </a>)
+                   : ( <Link to="/login">LOGIN/SIGNUP</Link>) 
+                }
               </span>
             </li>
           </ul>
