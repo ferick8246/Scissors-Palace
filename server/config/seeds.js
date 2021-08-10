@@ -29,14 +29,13 @@ db.once('open', async () => {
     {
       name: 'The Weeknd',
       description:
-        `We both know we can't go without it
-        She told me, "You'll never be in love" oh, oh, ooh!
+        `oh, oh, ooh!
         I can't feel my face when I'm with you, but I love it, 
         but I love it, oh`,
       image: 'haircut-7.jpg',
       category: categories[0]._id,
-      price: 2.99,
-      quantity: 500
+      price: 45.00,
+      quantity: 'Check Availability'
     },
     {
       name: 'The Kravitz',
