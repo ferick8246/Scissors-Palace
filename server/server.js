@@ -20,11 +20,10 @@ app.use(express.json());
 
 if (process.env.NODE_ENV === 'production') {
     app.use(express.static(path.join(__dirname, '..', 'react-ui', 'build')));
-    console.log('mode is production');
+    console.log('mode is production wueyy');
 }
 
 app.get('*', (req, res) => {
-    console.log(path.resolve(__dirname, '..', 'react-ui', 'build', 'index.html'));
     res.sendFile(path.resolve(__dirname, '..', 'react-ui', 'build', 'index.html'));
 })
 

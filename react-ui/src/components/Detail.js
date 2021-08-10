@@ -91,21 +91,35 @@ if (currentProduct.quantity === 1) {
   return (
     <>
       {currentProduct && cart ? (
-        <div className="">
-          <Link to="/shop">← Products</Link>
-          <h2>{currentProduct.name}</h2>
-          <p>{currentProduct.description}</p>
-          <p>{trueQuantity}</p>
-          
-          <p>
-            <strong>Price:</strong>${currentProduct.price}{' '}
-            <button onClick={addToCart}>Add to Cart</button>
-            <button disabled={!cart.find((p) => p._id === currentProduct._id)} onClick={removeFromCart}>
-              Remove from Cart
-            </button>
-          </p>
+        <div className="container">
+          <section className="text-gray-700 body-font overflow-hidden bg-white">
+            <div className="container px-5 py-24 mx-auto">
+              <Link to="/shop">← Products</Link> <br/>
+              <div className="lg:w-4/5 mx-auto flex flex-wrap">
+                <img alt="ecommerce" className="lg:w-1/2 w-full object-cover object-center rounded border border-gray-200" src={`/images/${currentProduct.image}`} alt={currentProduct.name} />
+                <div className="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
+                  <h2 className="text-sm title-font text-gray-500 tracking-widest">{trueQuantity}</h2>
+                  <h1 className="text-gray-900 text-3xl title-font font-medium mb-1">{currentProduct.name}</h1>
+                  <p className="leading-relaxed">{currentProduct.description}</p>
 
-          <img src={`/images/${currentProduct.image}`} alt={currentProduct.name}/>
+                    <div className="flex mt-6 items-center pb-5 border-b-2 border-gray-200 mb-5">
+                      <div className="flex ml-6 items-center">
+                        <div className="relative">
+                          <span className="absolute right-0 top-0 h-full w-10 text-center text-gray-600 pointer-events-none flex items-center justify-center">
+                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4" viewBox="0 0 24 24"/>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  <div className="flex">
+                    <span className="title-font font-medium text-2xl text-gray-900">${currentProduct.price}</span>
+                    <button class="flex ml-auto text-white bg-yellow-500 border-0 py-2 px-6 focus:outline-none hover:bg-yellow-600 rounded" onClick={addToCart}>Add To Cart</button>
+                    <button class="flex ml-auto text-white bg-red-500 border-0 py-2 px-6 focus:outline-none hover:bg-red-600 rounded" disabled={!cart.find((p) => p._id === currentProduct._id)} onClick={removeFromCart}>Remove From Cart</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
         </div>
       ) : null}
       {loading ? <img src='' alt='' /> : null}
