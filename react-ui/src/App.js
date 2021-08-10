@@ -27,6 +27,7 @@ import Shop from './components/Shop';
 import Footer from './components/layout/Footer';
 import Services from './components/Services';
 import Product from './components/Product';
+import Detail from './components/Detail';
 import Reviews from './components/Reviews';
 import Gallery from './components/Gallery';
 import Calendar from './components/Calendar';
@@ -67,6 +68,8 @@ function App() {
               <Route exact path="/login" component={Login} />
               <Route exact path="/signup" component={Signup} />
               <Route exact path="/shop" component={Shop}/>
+              <Route exact path="/products" component={Product}/>
+              <Route exact path="/products/:id" component={Detail} />
               <Route exact path="/services" component={Services} />
               <Route exact path="/reviews" component={Reviews} />
               <Route exact path="/gallery" component={Gallery} />
