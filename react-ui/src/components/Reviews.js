@@ -16,7 +16,7 @@ function Reviews() {
               making adjustments. No rush, great style, trust him with your
               head!
             </p>
-            <span class="inline-block h-1 w-10 rounded bg-indigo-500 mt-8 mb-6"></span>
+            <span class="inline-block h-1 w-10 rounded bg-yellow-500 mt-8 mb-6"></span>
             <h2 class="text-gray-900 font-medium title-font tracking-wider text-sm">
               Dwayne 'The Rock' Johnson
             </h2>
@@ -36,7 +36,7 @@ function Reviews() {
               friendly and cozy, and who can complain about a glass of wine
               while your color is sitting?
             </p>
-            <span class="inline-block h-1 w-10 rounded bg-indigo-500 mt-8 mb-6"></span>
+            <span class="inline-block h-1 w-10 rounded bg-yellow-500 mt-8 mb-6"></span>
             <h2 class="text-gray-900 font-medium title-font tracking-wider text-sm">
               Beyonce Knowles-Carter
             </h2>
@@ -55,7 +55,7 @@ function Reviews() {
               absolute professional and takes care of you 100%. Her color
               correction was totally amazing and I had a great time too.
             </p>
-            <span class="inline-block h-1 w-10 rounded bg-indigo-500 mt-8 mb-6"></span>
+            <span class="inline-block h-1 w-10 rounded bg-yellow-500 mt-8 mb-6"></span>
             <h2 class="text-gray-900 font-medium title-font tracking-wider text-sm">
               Oprah Winfrey
             </h2>
@@ -81,7 +81,7 @@ function Reviews() {
               my haircut. Nobody writes better reviews than me. I've got a piece
               of pocket-lint worth more than Beyonce's review.
             </p>
-            <span class="inline-block h-1 w-10 rounded bg-indigo-500 mt-8 mb-6"></span>
+            <span class="inline-block h-1 w-10 rounded bg-yellow-500 mt-8 mb-6"></span>
             <h2 class="text-gray-900 font-medium title-font tracking-wider text-sm">
               Donald Trump
             </h2>
@@ -99,7 +99,7 @@ function Reviews() {
               always struggle between what I want and what I need. Erick finds
               really good balance and gives the best advice every time!
             </p>
-            <span class="inline-block h-1 w-10 rounded bg-indigo-500 mt-8 mb-6"></span>
+            <span class="inline-block h-1 w-10 rounded bg-yellow-500 mt-8 mb-6"></span>
             <h2 class="text-gray-900 font-medium title-font tracking-wider text-sm">
               Jeff Bezos
             </h2>
