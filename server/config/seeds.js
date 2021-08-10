@@ -23,8 +23,8 @@ db.once('open', async () => {
         'Start lookin fresh with a fade that tapers',
       image: 'haircut-1.jpg',
       category: categories[0]._id,
-      price: 2.99,
-      quantity: 500
+      price: 25.00,
+      quantity: 'Check Availability'
     },
     {
       name: 'The Weeknd',
