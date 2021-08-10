@@ -81,8 +81,8 @@ db.once('open', async () => {
         `Unless you got buns`,
       image: 'haircut-2.jpg',
       category: categories[0]._id,
-      price: 2.99,
-      quantity: 500
+      price: 30.00,
+      quantity: 'Check Availability'
     },
     {
       name: 'The Kawhi Leonard',
