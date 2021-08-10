@@ -45,8 +45,8 @@ db.once('open', async () => {
         And I got to, got to know`,
       image: 'haircut-6.jpg',
       category: categories[0]._id,
-      price: 2.99,
-      quantity: 500
+      price: 50.00,
+      quantity: 'Check Availability'
     },
     {
       name: 'The Karen',
