@@ -90,8 +90,8 @@ db.once('open', async () => {
         `I'm a fun guy. There's just more questions that you need to be asking me.`,
       image: 'kawhi-leonard.jpg',
       category: categories[0]._id,
-      price: 2.99,
-      quantity: 500
+      price: 45.00,
+      quantity: 'Check Availability'
     },
     {
       name: 'Dryer',
