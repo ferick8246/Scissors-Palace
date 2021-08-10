@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Scissors Palace",
+  "name": "Scissors Palace",
   "icons": [
     {
       "src": "favicon.ico",
@@ -18,8 +18,17 @@
       "sizes": "512x512"
     }
   ],
+  "image": [
+    {
+      "src": "bezos.png",
+      "type": "image/png",
+      "sizes": "232x232"
+    }
+
+  ],
   "start_url": ".",
   "display": "standalone",
   "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "background_color": "#ffffff",
+  "description": "Come get the hair you've been waiting for your whole life!"
 }
