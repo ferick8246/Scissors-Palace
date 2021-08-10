@@ -24,7 +24,7 @@ db.once('open', async () => {
       image: 'haircut-1.jpg',
       category: categories[0]._id,
       price: 25.00,
-      quantity: 'Check Availability'
+      quantity: 1
     },
     {
       name: 'The Weeknd',
@@ -35,7 +35,7 @@ db.once('open', async () => {
       image: 'haircut-7.jpg',
       category: categories[0]._id,
       price: 45.00,
-      quantity: 'Check Availability'
+      quantity: 1
     },
     {
       name: 'The Kravitz',
@@ -46,7 +46,7 @@ db.once('open', async () => {
       image: 'haircut-6.jpg',
       category: categories[0]._id,
       price: 50.00,
-      quantity: 'Check Availability'
+      quantity: 1
     },
     {
       name: 'The Karen',
@@ -55,7 +55,7 @@ db.once('open', async () => {
       image: 'haircut-5.jpg',
       category: categories[0]._id,
       price: 120.99,
-      quantity: 'Check Availability'
+      quantity: 1
     },
     {
       name: 'The Rachelle',
@@ -64,7 +64,7 @@ db.once('open', async () => {
       image: 'haircut-4.jpg',
       category: categories[0]._id,
       price: 220.99,
-      quantity: 'Check Availability'
+      quantity: 1
     },
     {
       name: 'Mr-T',
@@ -73,7 +73,7 @@ db.once('open', async () => {
       image: 'Mr-T.jpg',
       category: categories[0]._id,
       price: 30.00,
-      quantity: 'Check Availability'
+      quantity: 1
     },
     {
       name: 'The Buns',
@@ -82,7 +82,7 @@ db.once('open', async () => {
       image: 'haircut-2.jpg',
       category: categories[0]._id,
       price: 30.00,
-      quantity: 'Check Availability'
+      quantity: 1
     },
     {
       name: 'The Kawhi Leonard',
@@ -91,7 +91,7 @@ db.once('open', async () => {
       image: 'kawhi-leonard.jpg',
       category: categories[0]._id,
       price: 45.00,
-      quantity: 'Check Availability'
+      quantity: 1
     },
     {
       name: 'Dryer',
