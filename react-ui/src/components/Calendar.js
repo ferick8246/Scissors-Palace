@@ -11,30 +11,30 @@ function ReactCalendar() {
   useEffect(() => {
     switch (path) {
       case "/calendar/womensshampoo":
-        setService({ name: "Women's Shampoo", time: "30 min", cost: "$65" });
+        setService({ name: "Women's Shampoo", cost: "$65" });
         break;
       case "/calendar/womenshaircut":
-        setService({ name: "Women's Haircut", time: "30 min", cost: "$65" });
+        setService({ name: "Women's Haircut", cost: "$65" });
       case "/calendar/partialhighlight":
-        setService("Partial Highlight");
+        setService({ name: "Partial Highlight", cost: "$65" });
       case "/calendar/fullhighlight":
-        setService("Full Highlight");
+        setService({ name: "Full Highlight", cost: "$65" });
       case "/calendar/bridalstyle":
-        setService("Bridal Style");
+        setService({ name: "Bridal Style", cost: "$65" });
       case "/calendar/fullbridalservice":
-        setService("Full Bridal Service");
+        setService({ name: "Full Bridal Service", cost: "$65" });
       case "/calendar/afrohairstyling":
-        setService("Afro Hair Styling");
+        setService({ name: "Afro Hair Styling", cost: "$65" });
       case "/calendar/locstyling":
-        setService("Loc Styling");
+        setService({ name: "Loc Styling", cost: "$65" });
       case "/calendar/mensshampoo":
-        setService("Mens Shampoo");
+        setService({ name: "Men's Shampoo", cost: "$65" });
       case "/calendar/mensfade":
-        setService("Mens Fade");
+        setService({ name: "Men's Fade", cost: "$65" });
       case "/calendar/braidingservices":
-        setService("Braiding Services");
+        setService({ name: "Braiding Services", cost: "$65" });
       case "/calendar/champagne":
-        setService("Champagne");
+        setService({ name: "Champagne", cost: "$65" });
     }
   }, [path]);
 
