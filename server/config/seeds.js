@@ -127,7 +127,7 @@ db.once('open', async () => {
       image: 'straight-razor.jpg',
       category: categories[0]._id,
       price: 5000.00,
-      quantity: 5
+      quantity: 10
     },
     {
       name: 'Shampoo',
@@ -136,7 +136,7 @@ db.once('open', async () => {
       image: 'shampoo.jpg',
       category: categories[0]._id,
       price: 1000.00,
-      quantity: 5
+      quantity: 10
     },
   ]);
 
