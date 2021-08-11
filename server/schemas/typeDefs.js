@@ -25,6 +25,7 @@ type User {
 }
 
 type Cart {
+    _id: ID
     purchaseDate: String
     products: [Product]
 }
