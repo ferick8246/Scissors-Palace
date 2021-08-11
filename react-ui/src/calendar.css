@@ -138,6 +138,11 @@
 
 #checkoutArrow {
   margin-top: 40px;
+  cursor: pointer;
+}
+
+#checkoutArrow:hover {
+color: red;
 }
 
 /* Homepage Video */
