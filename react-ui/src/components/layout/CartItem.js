@@ -37,7 +37,7 @@ const CartItem = ({ item }) => {
   }
 
   return (
-    <div className="flex-row">
+    <div className="p-2 flex bg-white hover:bg-gray-100 cursor-pointer border-b border-gray-100">
       <div>
         <img
           src={`/images/${item.image}`}
