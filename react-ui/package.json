@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "proxy": "http://localhost:3005",
+  "proxy": "http://127.0.0.1:3005/",
   "scripts": {
     "start": "craco start --verbose",
     "build": "craco build",

@@ -1,6 +1,6 @@
 const { AuthenticationError, UserInputError } = require('apollo-server-express');
 const { signToken } = require('../utils/auth');
-const { User, Product, Category} = require('../models')
+const { User, Product, Category, Cart} = require('../models')
 const stripe = require('stripe')('sk_test_51JJpIQDB4Au8TmvcC3rYqkqc6ASA1IUOw9BhGGswUuEpZWXQ3AnVlf7QYyyPIp0WlLcfl6PKG05ttFNBlnfYjbPj00sc7JRLfZ')
 
 const resolvers = {
@@ -66,30 +66,49 @@ const resolvers = {
 
 
         checkout: async (parent, args, context) => {
-            const url = new URL(context.headers.referer).origin
-            const cart = new Cart({ products: args.products })
+            
+            
+                
+            
+            console.log(context);
+            const url = new URL('http://localhost:3000')
+            // const url = ''
+            console.log('fun dip');
+            // const cart = new Cart({ products: args.products })
+            console.log('3456');
             const line_items = []
-            const { products } = await cart.populate('products').execPopulate()
+            console.log('banana nut muffins');
+            // const { products } = await cart.populate('products').execPopulate()
+            console.log('Hello from Resolver!!!!!!',args);
+            const products = await Product.find({_id:{$in:args.products}})
+
 
             for (let i = 0; i < products.length; i++) {
+                console.log(products[i]);
                 const product = await stripe.products.create({
                     name: products[i].name,
-                    description: products[i].name,
+                    description: products[i].description,
                     images: [`${url}/images/${products[i].image}`]
                 })
-
+                console.log('hello everyone');
                 const price = await stripe.prices.create({
                     product: product.id,
                     unit_amount: products[i].price * 100,
                     currency: 'usd',
                 })
-
+                console.log('howdy');
+                
                 line_items.push({
                     price: price.id,
                     quantity: 1
                 })
+                console.log('whats up');
             }
+        
 
+                
+            
+            console.log(line_items);
             const session = await stripe.checkout.sessions.create({
                 payment_method_types: ['card'],
                 line_items,
@@ -98,6 +117,8 @@ const resolvers = {
                 cancel_url: `${url}/`
             })
 
+
+            console.log(session);
             return { session: session.id }
         }
     },
