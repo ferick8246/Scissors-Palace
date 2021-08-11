@@ -23,20 +23,19 @@ db.once('open', async () => {
         'Start lookin fresh with a fade that tapers',
       image: 'haircut-1.jpg',
       category: categories[0]._id,
-      price: 2.99,
-      quantity: 500
+      price: 90.00,
+      quantity: 1
     },
     {
       name: 'The Weeknd',
       description:
-        `We both know we can't go without it
-        She told me, "You'll never be in love" oh, oh, ooh!
+        `oh, oh, ooh!
         I can't feel my face when I'm with you, but I love it, 
         but I love it, oh`,
       image: 'haircut-7.jpg',
       category: categories[0]._id,
-      price: 2.99,
-      quantity: 500
+      price: 150.00,
+      quantity: 1
     },
     {
       name: 'The Kravitz',
@@ -46,8 +45,8 @@ db.once('open', async () => {
         And I got to, got to know`,
       image: 'haircut-6.jpg',
       category: categories[0]._id,
-      price: 2.99,
-      quantity: 500
+      price: 100.00,
+      quantity: 1
     },
     {
       name: 'The Karen',
@@ -55,8 +54,8 @@ db.once('open', async () => {
         `I don't like your tone, do you know who I am?... May I speak to your manager?`,
       image: 'haircut-5.jpg',
       category: categories[0]._id,
-      price: 2.99,
-      quantity: 500
+      price: .99,
+      quantity: 1
     },
     {
       name: 'The Rachelle',
@@ -64,8 +63,8 @@ db.once('open', async () => {
         `PIVOT!... And just to let you know... we were on a break!`,
       image: 'haircut-4.jpg',
       category: categories[0]._id,
-      price: 2.99,
-      quantity: 500
+      price: 150.00,
+      quantity: 1
     },
     {
       name: 'Mr-T',
@@ -73,8 +72,8 @@ db.once('open', async () => {
         `I pitty the fool who don't rock the mowhawk!`,
       image: 'Mr-T.jpg',
       category: categories[0]._id,
-      price: 2.99,
-      quantity: 500
+      price: 250.00,
+      quantity: 1
     },
     {
       name: 'The Buns',
@@ -82,8 +81,8 @@ db.once('open', async () => {
         `Unless you got buns`,
       image: 'haircut-2.jpg',
       category: categories[0]._id,
-      price: 2.99,
-      quantity: 500
+      price: 50.00,
+      quantity: 1
     },
     {
       name: 'The Kawhi Leonard',
@@ -91,8 +90,8 @@ db.once('open', async () => {
         `I'm a fun guy. There's just more questions that you need to be asking me.`,
       image: 'kawhi-leonard.jpg',
       category: categories[0]._id,
-      price: 2.99,
-      quantity: 500
+      price: 125.00,
+      quantity: 1
     },
     {
       name: 'Dryer',
@@ -101,7 +100,7 @@ db.once('open', async () => {
       image: 'hair-dryer.jpg',
       category: categories[0]._id,
       price: 1000.00,
-      quantity: 500
+      quantity: 50
     },
     {
       name: 'Hair Dye',
@@ -109,8 +108,8 @@ db.once('open', async () => {
         `Exclusive dye all the way from France`,
       image: 'hair-color.jpg',
       category: categories[0]._id,
-      price: 500.00,
-      quantity: 500
+      price: 250.00,
+      quantity: 100
     },
     {
       name: 'The Clippers',
@@ -119,7 +118,7 @@ db.once('open', async () => {
       image: 'clippers.jpg',
       category: categories[0]._id,
       price: 5000.00,
-      quantity: 5
+      quantity: 4
     },
     {
       name: 'The Razer',
@@ -127,8 +126,8 @@ db.once('open', async () => {
         `NO not the phone! Stop asking!`,
       image: 'straight-razor.jpg',
       category: categories[0]._id,
-      price: 5000.00,
-      quantity: 5
+      price: 89.00,
+      quantity: 48
     },
     {
       name: 'Shampoo',
@@ -137,7 +136,7 @@ db.once('open', async () => {
       image: 'shampoo.jpg',
       category: categories[0]._id,
       price: 1000.00,
-      quantity: 5
+      quantity: 53
     },
   ]);
 

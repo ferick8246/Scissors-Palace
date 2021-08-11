@@ -29,7 +29,7 @@ function Services(){
                         </a>
                     </div>
                     <div class="sm:w-32 sm:order-none order-first sm:h-32 h-20 w-20 sm:ml-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 flex-shrink-0">
-                        <img src="./images/womanShampoo.png" alt="Display Picture of partial highlight" role="img" className="rounded-full object-cover h-full w-full shadow-md"></img>
+                        <img src="./images/womanShampoo.jpg" alt="Display Picture of partial highlight" role="img" className="rounded-full object-cover h-full w-full shadow-md"></img>
                     </div>
                 </div>
 
@@ -61,7 +61,7 @@ function Services(){
                         </a>
                     </div>
                     <div class="sm:w-32 sm:order-none order-first sm:h-32 h-20 w-20 sm:ml-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 flex-shrink-0">
-                        <img src="./images/partHighlight.png" alt="Display Picture of partial highlight" role="img" className="rounded-full object-cover h-full w-full shadow-md"></img>
+                        <img src="./images/partHighlight.jpg" alt="Display Picture of partial highlight" role="img" className="rounded-full object-cover h-full w-full shadow-md"></img>
                     </div>
                 </div>
 
@@ -69,7 +69,7 @@ function Services(){
 
                 <div class="flex items-center lg:w-3/5 mx-auto border-b pb-10 mb-10 border-gray-200 sm:flex-row flex-col">
                     <div class="sm:w-32 sm:h-32 h-20 w-20 sm:mr-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 flex-shrink-0">   
-                        <img src="./images/fullHighlight.png" alt="Display Picture of full highlight" role="img" className="rounded-full object-cover h-full w-full shadow-md"></img>
+                        <img src="./images/fullHighlight.jpg" alt="Display Picture of full highlight" role="img" className="rounded-full object-cover h-full w-full shadow-md"></img>
                     </div>
                     <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
                         <h2 class="text-gray-900 text-lg title-font font-medium mb-2">Full Highlight</h2>
@@ -94,13 +94,13 @@ function Services(){
                         </a>
                     </div>
                     <div class="sm:w-32 sm:order-none order-first sm:h-32 h-20 w-20 sm:ml-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 flex-shrink-0">
-                        <img src="./images/bridal.png" alt="Display Picture of Bridal Style" role="img" className="rounded-full object-cover h-full w-full shadow-md"></img>
+                        <img src="./images/bridal.jpg" alt="Display Picture of Bridal Style" role="img" className="rounded-full object-cover h-full w-full shadow-md"></img>
                     </div>
                 </div>
 
                 <div class="flex items-center lg:w-3/5 mx-auto border-b pb-10 mb-10 border-gray-200 sm:flex-row flex-col">
                     <div class="sm:w-32 sm:h-32 h-20 w-20 sm:mr-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 flex-shrink-0">   
-                        <img src="./images/bridalNatural.png" alt="Display Picture of natural bride" role="img" className="rounded-full object-cover h-full w-full shadow-md"></img>
+                        <img src="./images/bridalNatural.jpg" alt="Display Picture of natural bride" role="img" className="rounded-full object-cover h-full w-full shadow-md"></img>
                     </div>
                     <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
                         <h2 class="text-gray-900 text-lg title-font font-medium mb-2">Full Bridal Services with travel</h2>
@@ -125,7 +125,7 @@ function Services(){
                         </a>
                     </div>
                     <div class="sm:w-32 sm:order-none order-first sm:h-32 h-20 w-20 sm:ml-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 flex-shrink-0">
-                        <img src="./images/naturalStyle.png" alt="Display Picture of Natural Afro Hair" role="img" className="rounded-full object-cover h-full w-full shadow-md"></img>
+                        <img src="./images/naturalStyle.jpg" alt="Display Picture of Natural Afro Hair" role="img" className="rounded-full object-cover h-full w-full shadow-md"></img>
                     </div>
                 </div>
 
@@ -156,7 +156,7 @@ function Services(){
                         </a>
                     </div>
                     <div class="sm:w-32 sm:order-none order-first sm:h-32 h-20 w-20 sm:ml-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 flex-shrink-0">
-                        <img src="./images/menShampoo.png" alt="Display Picture of man being shampooed." role="img" className="rounded-full object-cover h-full w-full shadow-md"></img>
+                        <img src="./images/menShampoo.jpg" alt="Display Picture of man being shampooed." role="img" className="rounded-full object-cover h-full w-full shadow-md"></img>
                     </div>
                 </div>
 
@@ -194,7 +194,7 @@ function Services(){
 
                 <div class="flex items-center lg:w-3/5 mx-auto border-b pb-10 mb-10 border-gray-200 sm:flex-row flex-col">
                     <div class="sm:w-32 sm:h-32 h-20 w-20 sm:mr-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 flex-shrink-0">   
-                        <img src="./images/champagne.png" alt="Display Picture of Man with Fade" role="img" className="rounded-full object-cover h-full w-full shadow-md"></img>
+                        <img src="./images/champagne.jpg" alt="Display Picture of Man with Fade" role="img" className="rounded-full object-cover h-full w-full shadow-md"></img>
                     </div>
                 <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
                     <h2 class="text-gray-900 text-lg title-font font-medium mb-2">Champagne Add-On</h2>
