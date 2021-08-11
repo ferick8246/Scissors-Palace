@@ -18,7 +18,7 @@ function ReactCalendar() {
         setService({
           name: "Women's Shampoo",
           _id: "Women's Shampoo",
-          price: "$65",
+          price: 65,
           image: "womanShampoo.jpg",
         });
         break;
@@ -26,7 +26,7 @@ function ReactCalendar() {
         setService({
           name: "Women's Haircut",
           _id: "Women's Haircut",
-          price: "$65",
+          price: 65,
           image: "haircut-4.jpg",
         });
         break;
@@ -34,7 +34,7 @@ function ReactCalendar() {
         setService({
           name: "Partial Highlight",
           _id: "Partial Highlight",
-          price: "$65",
+          price: 65,
           image: "partHighlight.jpg",
         });
         break;
@@ -42,7 +42,7 @@ function ReactCalendar() {
         setService({
           name: "Full Highlight",
           __id: "Full Highlight",
-          price: "$65",
+          price: 65,
           image: "fullHighlight.jpg",
         });
         break;
@@ -50,7 +50,7 @@ function ReactCalendar() {
         setService({
           name: "Bridal Style",
           _id: "Bridal Style",
-          price: "$65",
+          price: 65,
           image: "bridal.jpg",
         });
         break;
@@ -58,7 +58,7 @@ function ReactCalendar() {
         setService({
           name: "Full Bridal Service",
           _id: "Full Bridal Service",
-          price: "$65",
+          price: 65,
           image: "bridalNatural.jpg",
         });
         break;
@@ -66,7 +66,7 @@ function ReactCalendar() {
         setService({
           name: "Afro Hair Styling",
           _id: "Afro Hair Styling",
-          price: "$65",
+          price: 65,
           image: "naturalStyle.jpg",
         });
         break;
@@ -74,7 +74,7 @@ function ReactCalendar() {
         setService({
           name: "Loc Styling",
           _id: "Loc Styling",
-          price: "$65",
+          price: 65,
           image: "haircut-7.jpg",
         });
         break;
@@ -82,7 +82,7 @@ function ReactCalendar() {
         setService({
           name: "Men's Shampoo",
           _id: "Men's Shampoo",
-          price: "$65",
+          price: 65,
           image: "menShampoo.jpg",
         });
         break;
@@ -90,7 +90,7 @@ function ReactCalendar() {
         setService({
           name: "Men's Fade",
           _id: "Men's Fade",
-          price: "$65",
+          price: 65,
           image: "haircut-2.jpg",
         });
         break;
@@ -98,7 +98,7 @@ function ReactCalendar() {
         setService({
           name: "Braiding Services",
           _id: "Braiding Services",
-          price: "$65",
+          price: 65,
           image: "kawhi.png",
         });
         break;
@@ -106,7 +106,7 @@ function ReactCalendar() {
         setService({
           name: "Champagne",
           _id: "Champagne",
-          price: "$65",
+          price: 65,
           image: "champagne.jpg",
         });
         break;
