@@ -9,11 +9,11 @@ import { useStoreContext } from '../../utils/GlobalState';
 import { TOGGLE_CART, ADD_MULTIPLE_TO_CART } from '../../utils/actions';
 import './cart.css';
 
-const stripePromise = loadStripe('pk_test_TYooMQauvdEDq54NiTphI7jx');
+const stripePromise = loadStripe('pk_test_51JJpIQDB4Au8Tmvc6HbqEQ5IM7LrKSJU9HM9QLAjYxUAn2jmj6ByyJxJBC421zs15BgbIIsYSX2l32BwOV5cmd7u00AOOoSF3P');
 
 const Cart = () => {
   const [state, dispatch] = useStoreContext();
-  const [getCheckout, { data , err}] = useLazyQuery(QUERY_CHECKOUT);
+  const [getCheckout, { data }] = useLazyQuery(QUERY_CHECKOUT);
 
   useEffect(() => {
     if (data) {
@@ -54,11 +54,11 @@ const Cart = () => {
         productIds.push(item._id);
       }
     });
-
+    console.log(productIds);
     console.log('About to do get checkout!!!')
     getCheckout({
       variables: { products: productIds },
-    });
+    })
   }
 
   if (!state.cartOpen) {
@@ -71,7 +71,7 @@ const Cart = () => {
     );
   }
 
-  console.log('ERR FORM CHECKOUT', err)
+  console.log('ERR FORM CHECKOUT')
 
   return (
     <div className="cart">
