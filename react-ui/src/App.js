@@ -24,6 +24,7 @@ import Contact from './components/Contact';
 import Login from './components/Login';
 import Signup from './components/Signup';
 import OrderHistory from './components/OrderHistory';
+import Success from './components/Success';
 import Shop from './components/Shop';
 import Footer from './components/layout/Footer';
 import Services from './components/Services';
@@ -70,6 +71,7 @@ function App() {
               <Route exact path="/signup" component={Signup} />
               <Route exact path="/shop" component={Shop}/>
               <Route exact path="/profile" component={OrderHistory} />
+              <Route exact path="/success" component={Success} />
               <Route exact path="/products" component={Product}/>
               <Route exact path="/products/:id" component={Detail} />
               <Route exact path="/services" component={Services} />
