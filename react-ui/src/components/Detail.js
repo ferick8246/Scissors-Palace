@@ -113,8 +113,8 @@ if (currentProduct.quantity === 1) {
                     </div>
                   <div className="flex">
                     <span className="title-font font-medium text-2xl text-gray-900">${currentProduct.price}</span>
-                    <button class="flex ml-auto text-white bg-yellow-500 border-0 py-2 px-6 focus:outline-none hover:bg-yellow-600 rounded" onClick={addToCart}>Add To Cart</button>
-                    <button class="flex ml-auto text-white bg-red-500 border-0 py-2 px-6 focus:outline-none hover:bg-red-600 rounded" disabled={!cart.find((p) => p._id === currentProduct._id)} onClick={removeFromCart}>Remove From Cart</button>
+                    <button className="flex ml-auto text-xs md:text-base text-white bg-yellow-500 border-0 py-2 px-6 focus:outline-none hover:bg-yellow-600 rounded" onClick={addToCart}>Add To Cart</button>
+                    <button className="flex ml-auto text-xs md:text-base text-white bg-red-500 border-0 py-2 px-6 focus:outline-none hover:bg-red-600 rounded" disabled={!cart.find((p) => p._id === currentProduct._id)} onClick={removeFromCart}>Remove From Cart</button>
                   </div>
                 </div>
               </div>
