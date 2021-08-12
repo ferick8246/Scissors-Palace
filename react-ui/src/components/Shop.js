@@ -2,6 +2,7 @@ import React, { useEffect } from "react"
 import MetaData from "./layout/MetaData";
 import { useStoreContext  } from "../utils/GlobalState";
 import Product from './Product';
+import Spinner from '../components/layout/Spinner';
 import {UPDATE_PRODUCTS} from '../utils/actions'
 import { useQuery } from '@apollo/client'
 import { QUERY_PRODUCTS } from '../utils/queries'
@@ -71,7 +72,7 @@ function Shop() {
               <h3>You haven't added any products yet! Did you remember to seed?</h3>
               )}
             </div>
-            {loading ? <img src='' alt="loading" /> : null}
+            {loading ? <Spinner /> : null}
         </div>
     )
 }
