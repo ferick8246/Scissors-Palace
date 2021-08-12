@@ -43,7 +43,7 @@ function Product(item) {
     }
 
     return (
-        <div className='container mx-auto p-9 bg-white max-w-sm rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition duration-300'>
+        <div className='container mx-2 my-2 p-9 bg-white max-w-sm rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition duration-300'>
             <Link to={`/products/${ _id }`}><img className='rounded-xl' src={ `/images/${image}` } alt={ name }/></Link>
                 <div>
                     <div className="flex justify-center text-center">
