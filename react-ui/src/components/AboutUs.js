@@ -24,8 +24,10 @@ function AboutUs() {
                             </div>
                             <div className="px-6 mt-16">
                                 <h1 className="font-bold text-3xl text-center mb-1">Erick Flores</h1>
-                                <p className="text-gray-800 text-sm text-center">Senior Software Developer</p>
-                                <p className="text-center text-gray-600 text-base pt-3 font-normal">Experienced leader in raising a company's corporate IQ and establishing an atmosphere that promotes knowledge sharing and collaboration.</p>
+                                <p className="text-gray-800 text-sm text-center">Project Manager/Senior Software Developer</p>
+                                <p className="text-center text-gray-600 text-base pt-3 font-normal">Software development manager with extensive experience in full lifecycle software engineering, 
+                                development, programming, quality assurance, support and implementation. In-depth knowledge of software technologies, architectures and platforms, with the ability to apply them to cutting edge software, 
+                                systems and applications.</p>
                                 <div className="w-full flex justify-center pt-5 pb-5">
                                     <a href="https://github.com/ferick8246" className="mx-5">
                                         <div aria-label="Github" role="img">
