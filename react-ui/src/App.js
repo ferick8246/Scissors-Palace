@@ -17,6 +17,7 @@ const httpLink = createHttpLink({
 
 // component imports:
 import Header from './components/layout/Header';
+import Home from './components/Home';
 import Cart from './components/layout/Cart'
 import NavBar from './components/layout/NavBar';
 import AboutUs from './components/AboutUs';
@@ -33,6 +34,7 @@ import Detail from './components/Detail';
 import Reviews from './components/Reviews';
 import Gallery from './components/Gallery';
 import Calendar from './components/Calendar';
+import Homepage from './components/Homepage';
 import { StoreProvider } from './utils/GlobalState';
 
 
@@ -65,6 +67,7 @@ function App() {
               <NavBar />
               <Header />
               <Cart />
+              <Route exact path="/" component={Home} />
               <Route exact path="/about" component={AboutUs} />
               <Route exact path="/contact" component={Contact} />
               <Route exact path="/login" component={Login} />
@@ -78,6 +81,8 @@ function App() {
               <Route exact path="/reviews" component={Reviews} />
               <Route exact path="/gallery" component={Gallery} />
               <Route exact path="/calendar/:service" component={Calendar} />
+              <Route exact path="/cart" component={Cart} />
+              <Route exact path="/" component={Homepage} />
               <Footer />
             </StoreProvider>
           </div>
