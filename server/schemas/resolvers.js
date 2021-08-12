@@ -44,7 +44,7 @@ const resolvers = {
                 user.carts.sort((a, b) => b.purchaseDate - a.purchaseDate)
                 return user
             }
-            throw new AuthenticationError(`Hey, you're not logged in!`)
+            throw new AuthenticationError(`Hey, you're not logged in! FROM USER`)
         },
 
 
@@ -58,45 +58,43 @@ const resolvers = {
                 return user.carts.id(_id)
             }
 
-            throw new AuthenticationError(`Hey, you're not logged in!`)
+            throw new AuthenticationError(`Hey, you're not logged in! FROM CART`)
         },
 
 
         checkout: async (parent, args, context) => {
-            
             const url = new URL('http://localhost:3000')
             const line_items = []
             const products = await Product.find({_id:{$in:args.products}})
-
-
+            
             for (let i = 0; i < products.length; i++) {
-                const product = await stripe.products.create({
-                    name: products[i].name,
-                    description: products[i].description,
-                    images: [`${url}/images/${products[i].image}`]
-                })
-                const price = await stripe.prices.create({
-                    product: product.id,
-                    unit_amount: products[i].price * 100,
-                    currency: 'usd',
-                })
-                
-                line_items.push({
-                    price: price.id,
-                    quantity: 1
-                })
+              const product = await stripe.products.create({
+                name: products[i].name,
+                description: products[i].description,
+                images: [`${url}/images/${products[i].image}`]
+              });
+      
+              const price = await stripe.prices.create({
+                product: product.id,
+                unit_amount: products[i].price * 100,
+                currency: 'usd',
+              });
+      
+              line_items.push({
+                price: price.id,
+                quantity: 1
+              });
             }
-        
-
+      
             const session = await stripe.checkout.sessions.create({
-                payment_method_types: ['card'],
-                line_items,
-                mode: 'payment',
-                success_url: `${url}/success?session_id={CHECKOUT_SESSION_ID}`,
-                cancel_url: `${url}/`
-            })
-
-            return { session: session.id }
+              payment_method_types: ['card'],
+              line_items,
+              mode: 'payment',
+              success_url: [`${url}`, 'success'].join(''),
+              cancel_url: `${url}/`
+            });
+      
+            return { session: session.id };
         }
     },
 
@@ -120,7 +118,7 @@ const resolvers = {
                 await User.findByIdAndUpdate(context.user._id, { $push: { carts: cart } })
                 return cart
             }
-            throw new AuthenticationError(`Hey, you're not logged in!`)
+            throw new AuthenticationError(`Hey, you're not logged in! FROM ADD TO CART`)
         },
 
 
@@ -129,7 +127,7 @@ const resolvers = {
             if (context.user) {
                 return await User.findByIdAndUpdate(context.user._id, args, { new: true })
             }
-            throw new AuthenticationError(`Hey, you're not logged in!`)
+            throw new AuthenticationError(`Hey, you're not logged in! FROM UPDATEUSER`)
         },
 
 
