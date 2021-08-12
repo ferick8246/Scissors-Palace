@@ -1,6 +1,6 @@
 const { AuthenticationError, UserInputError } = require('apollo-server-express');
 const { signToken } = require('../utils/auth');
-const { User, Product, Category} = require('../models')
+const { User, Product, Category, Cart} = require('../models')
 const stripe = require('stripe')('sk_test_51JJpIQDB4Au8TmvcC3rYqkqc6ASA1IUOw9BhGGswUuEpZWXQ3AnVlf7QYyyPIp0WlLcfl6PKG05ttFNBlnfYjbPj00sc7JRLfZ')
 
 const resolvers = {
@@ -25,7 +25,6 @@ const resolvers = {
                     $regex: name
                 }
             }
-
             return await Product.find(params).populate(category)
         },
         
@@ -43,10 +42,8 @@ const resolvers = {
                 })
 
                 user.carts.sort((a, b) => b.purchaseDate - a.purchaseDate)
-
                 return user
             }
-
             throw new AuthenticationError(`Hey, you're not logged in!`)
         },
 
@@ -66,29 +63,30 @@ const resolvers = {
 
 
         checkout: async (parent, args, context) => {
-            const url = new URL(context.headers.referer).origin
-            const cart = new Cart({ products: args.products })
+            
+            const url = new URL('http://localhost:3000')
             const line_items = []
-            const { products } = await cart.populate('products').execPopulate()
+            const products = await Product.find({_id:{$in:args.products}})
+
 
             for (let i = 0; i < products.length; i++) {
                 const product = await stripe.products.create({
                     name: products[i].name,
-                    description: products[i].name,
+                    description: products[i].description,
                     images: [`${url}/images/${products[i].image}`]
                 })
-
                 const price = await stripe.prices.create({
                     product: product.id,
                     unit_amount: products[i].price * 100,
                     currency: 'usd',
                 })
-
+                
                 line_items.push({
                     price: price.id,
                     quantity: 1
                 })
             }
+        
 
             const session = await stripe.checkout.sessions.create({
                 payment_method_types: ['card'],
@@ -115,37 +113,36 @@ const resolvers = {
 
 
         addToCart: async (parent, { products }, context) => {
-            console.log(context)
+
             if (context.user) {
                 const cart = new Cart({ products })
 
                 await User.findByIdAndUpdate(context.user._id, { $push: { carts: cart } })
-
                 return cart
             }
-            
             throw new AuthenticationError(`Hey, you're not logged in!`)
         },
 
 
         updateUser: async(parent, args, context) => {
+           
             if (context.user) {
                 return await User.findByIdAndUpdate(context.user._id, args, { new: true })
             }
-
             throw new AuthenticationError(`Hey, you're not logged in!`)
         },
 
 
         updateProduct: async(parent, { _id, quantity }) => {
+            
             const decrement = Math.abs(quantity) * -1
-
             return await Product.findByIdAndUpdate(_id, { $inc: { quantity: decrement } }, { new: true })
 
         },
 
 
         login: async(parent, { email, password }) => {
+            
             const user = await User.findOne({ email })
 
             if (!user) {
@@ -159,7 +156,6 @@ const resolvers = {
             }
 
             const token = signToken(user)
-
             return { token, user }
         }
     }

@@ -23,7 +23,7 @@
 
 ## Application
 
-Currently deployed [on heroku](https://www.heroku.com/)
+Currently deployed [on heroku](https://scissors-palace.herokuapp.com/)
 
 ![Demo](assets/demo.png)  
 

@@ -9,11 +9,11 @@ import { useStoreContext } from '../../utils/GlobalState';
 import { TOGGLE_CART, ADD_MULTIPLE_TO_CART } from '../../utils/actions';
 import './cart.css';
 
-const stripePromise = loadStripe('pk_test_TYooMQauvdEDq54NiTphI7jx');
+const stripePromise = loadStripe('pk_test_51JJpIQDB4Au8Tmvc6HbqEQ5IM7LrKSJU9HM9QLAjYxUAn2jmj6ByyJxJBC421zs15BgbIIsYSX2l32BwOV5cmd7u00AOOoSF3P');
 
 const Cart = () => {
   const [state, dispatch] = useStoreContext();
-  const [getCheckout, { data , err}] = useLazyQuery(QUERY_CHECKOUT);
+  const [getCheckout, { data }] = useLazyQuery(QUERY_CHECKOUT);
 
   useEffect(() => {
     if (data) {
@@ -54,11 +54,11 @@ const Cart = () => {
         productIds.push(item._id);
       }
     });
-
+    console.log(productIds);
     console.log('About to do get checkout!!!')
     getCheckout({
       variables: { products: productIds },
-    });
+    })
   }
 
   if (!state.cartOpen) {
@@ -71,7 +71,7 @@ const Cart = () => {
     );
   }
 
-  console.log('ERR FORM CHECKOUT', err)
+  console.log('ERR FORM CHECKOUT')
 
   return (
     <div className="cart">
@@ -91,7 +91,7 @@ const Cart = () => {
             <strong>Total: ${calculateTotal()}</strong>
 
             {Auth.loggedIn() ? (
-              <button onClick={submitCheckout}>Checkout</button>
+              <button onClick={submitCheckout} className="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-yellow-500 hover:bg-yellow-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-500">Checkout</button>
             ) : (
               <span><br/>(log in to check out)</span>
             )}

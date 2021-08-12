@@ -17,12 +17,15 @@ const httpLink = createHttpLink({
 
 // component imports:
 import Header from './components/layout/Header';
+import Home from './components/Home';
 import Cart from './components/layout/Cart'
 import NavBar from './components/layout/NavBar';
 import AboutUs from './components/AboutUs';
 import Contact from './components/Contact';
 import Login from './components/Login';
 import Signup from './components/Signup';
+import OrderHistory from './components/OrderHistory';
+import Success from './components/Success';
 import Shop from './components/Shop';
 import Footer from './components/layout/Footer';
 import Services from './components/Services';
@@ -64,11 +67,14 @@ function App() {
               <NavBar />
               <Header />
               <Cart />
+              <Route exact path="/" component={Home} />
               <Route exact path="/about" component={AboutUs} />
               <Route exact path="/contact" component={Contact} />
               <Route exact path="/login" component={Login} />
               <Route exact path="/signup" component={Signup} />
               <Route exact path="/shop" component={Shop}/>
+              <Route exact path="/profile" component={OrderHistory} />
+              <Route exact path="/success" component={Success} />
               <Route exact path="/products" component={Product}/>
               <Route exact path="/products/:id" component={Detail} />
               <Route exact path="/services" component={Services} />
