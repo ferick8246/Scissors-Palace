@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { useQuery } from '@apollo/client';
 import Cart from '../components/layout/Cart';
+import Spinner from '../components/layout/Spinner';
 import { useStoreContext } from '../utils/GlobalState';
 import {
   REMOVE_FROM_CART,
@@ -122,7 +123,7 @@ if (currentProduct.quantity === 1) {
           </section>
         </div>
       ) : null}
-      {loading ? <img src='' alt='' /> : null}
+      {loading ? <Spinner /> : null}
       <Cart />
     </>
   );
