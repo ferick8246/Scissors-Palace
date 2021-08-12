@@ -95,8 +95,8 @@ function AboutUs() {
                         <div className="px-6 mt-16">
                             <h1 className="font-bold text-3xl text-center mb-1">Kevin Henley</h1>
                             <p className="text-gray-800 text-sm text-center">Back-End Developer</p>
-                            <p className="text-center text-gray-600 text-base pt-3 font-normal">An avid open-source developer who loves to be creative and inventive. 
-                            If one portion of the team needs help with a task, I have no issue jumping in to assist on anything required.</p>
+                            <p className="text-center text-gray-600 text-base pt-3 font-normal">An avid open-source developer who loves to be creative and innovative. 
+                            If one portion of the team needs help with a task, I have no issue jumping in to assist on anything that's required.</p>
                             <div className="w-full flex justify-center pt-5 pb-5">
                                 <a href="https://github.com/KevinHenleyCode" className="mx-5">
                                     <div aria-label="Github" role="img">
