@@ -1,5 +1,5 @@
 import React from "react";
-
+import GalleryCard from "./GalleryCard";
 
 function Gallery() {
   return (
@@ -13,7 +13,7 @@ function Gallery() {
       </div>
 
       <div>
-      
+        <GalleryCard/>
       </div>
  
     </section>
