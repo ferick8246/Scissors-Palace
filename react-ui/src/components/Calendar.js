@@ -152,38 +152,28 @@ function ReactCalendar() {
 
   return (
     //this is the header
-    <div class="container px-5 py-24 mx-auto">
-      <div class="flex flex-col text-center w-full mb-20">
-        <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">
+    <div className="container px-5 py-24 mx-auto">
+      <div className="flex flex-col text-center w-full mb-20">
+        <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">
           Schedule Service Online
         </h1>
       </div>
       {/* this is the body container */}
-      <div class="bodyContainer2">
+      <div className="bodyContainer2">
         {/* this is the calendar */}
         <Calendar formatYear onChange={onChange} value={date} />
         {/* this is the smaller, second div */}
-        <div class="checkoutContainer">
+        <div className="checkoutContainer">
           <h1 id="serviceName">{service.name}</h1>
           <br></br>
           <br></br>
           <h2>
             {dateString} | {service.price}
           </h2>
-
-          {/* <div className="flex justify-center">
-            <button
-              className="text-white text-md font-semibold bg-yellow-400 py-2 px-4 rounded-lg shadow-md hover:shadow-lg transition duration-500 transform-gpu hover:scale-110"
-              onClick={addToCart}
-            >
-              Add to Cart
-            </button>
-          </div> */}
-
           <a
             // href="/cart"
             id="checkoutArrow"
-            class="mt-3 text-yellow-500 inline-flex items-center"
+            className="mt-3 text-yellow-500 inline-flex items-center"
             onClick={addToCart}
           >
             Checkout
@@ -193,7 +183,7 @@ function ReactCalendar() {
               stroke-linecap="round"
               stroke-linejoin="round"
               stroke-width="2"
-              class="w-4 h-4 ml-2"
+              className="w-4 h-4 ml-2"
               viewBox="0 0 24 24"
             >
               <path d="M5 12h14M12 5l7 7-7 7"></path>
