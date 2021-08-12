@@ -63,7 +63,7 @@ const resolvers = {
 
 
         checkout: async (parent, args, context) => {
-            const url = new URL('http://localhost:3000')
+            const url = new URL('https://scissors-palace.herokuapp.com')
             const line_items = []
             const products = await Product.find({_id:{$in:args.products}})
             
