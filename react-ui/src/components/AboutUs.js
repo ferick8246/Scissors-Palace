@@ -71,8 +71,8 @@ function AboutUs() {
                         </div>
                         <div className="px-6 mt-16">
                             <h1 className="font-bold text-3xl text-center mb-1">Jesse Ceniceros</h1>
-                            <p className="text-gray-800 text-sm text-center">Full-Stack Developer and DevOps Engineer</p>
-                            <p className="text-center text-gray-600 text-base pt-3 font-normal">Our services encompass the assessment and repair of property damage caused by water, fire, smoke, or mold. We can also be a part of the restoration.</p>
+                            <p className="text-gray-800 text-sm text-center">Front-End Developer</p>
+                            <p className="text-center text-gray-600 text-base pt-3 font-normal">Determining the layouts of the pages and integrating mobile design.</p>
                             <div className="w-full flex justify-center pt-5 pb-5">
                                 <a href="https://github.com/Jesse2360" className="mx-5">
                                     <div aria-label="Github" role="img">
