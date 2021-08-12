@@ -34,6 +34,7 @@ import Detail from './components/Detail';
 import Reviews from './components/Reviews';
 import Gallery from './components/Gallery';
 import Calendar from './components/Calendar';
+import Homepage from './components/Homepage';
 import { StoreProvider } from './utils/GlobalState';
 
 
@@ -80,6 +81,8 @@ function App() {
               <Route exact path="/reviews" component={Reviews} />
               <Route exact path="/gallery" component={Gallery} />
               <Route exact path="/calendar/:service" component={Calendar} />
+              <Route exact path="/cart" component={Cart} />
+              <Route exact path="/" component={Homepage} />
               <Footer />
             </StoreProvider>
           </div>
